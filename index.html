@@ -19,8 +19,8 @@
 
   <link rel="stylesheet" href="/styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="/styles/style.processed.min.css">
-  <link rel="stylesheet" href="https://www.ing.nl/assets/web/ng/css/bb4d737d.the-guide-styles-responsive.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -46,6 +46,7 @@
           <li class="list-inline-item"><a href="/training/fundamentals/home.html">Training</a></li>
           <li class="list-inline-item"><a href="/good-bad/home.html">Good / Bad</a></li>
           <li class="list-inline-item"><a href="/sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="/general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -55,7 +56,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="index.html" class="navbar-brand">
+        <a href="" class="navbar-brand">
           <img class="avatar-img" src="images/a11y-logo.png" alt="Accessibility Portal">
         </a>
 
@@ -69,17 +70,16 @@
           <div class="mr-auto">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="/index.html" aria-current="true" id="main-menu">Fundamentals <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/" aria-current="true" id="main-menu">Fundamentals <span class="sr-only">(current)</span></a>
                 <ul class="pagination pagination-navbar">
-                  <li class="page-item"><a class="page-link active" href="/index.html">Home <span class="sr-only">(current)</span></a></li>
+                  <li class="page-item"><a class="page-link active" href="/" aria-current="page">Home <span class="sr-only">(current)</span></a></li><li class="page-item"><a class="page-link" href="/basics/fundamentals/how-tos.html">How-To's</a></li>
                   <li class="page-item"><a class="page-link" href="/basics/fundamentals/getting-started.html">Getting Started</a></li>
                   <li class="page-item"><a class="page-link" href="/basics/fundamentals/dos-and-donts.html">Do's and Dont's</a></li>
-                  <li class="page-item"><a class="page-link" href="/basics/fundamentals/personas.html">Personas</a></li>
-                  <li class="page-item"><a class="page-link" href="/basics/fundamentals/tools.html">Tools</a></li>
+                  <li class="page-item"><a class="page-link" href="/basics/fundamentals/principles.html">Principles</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/basics/principles/wai-w3c.html">Principles</a>
+                <a class="nav-link" href="/basics/essentials/responsibilities.html">Essentials</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/basics/videos/a11ycasts.html">Videos</a>
@@ -100,12 +100,12 @@
   <main role="main" id="main-content">
     
     <div class="brandbar brandbar-a">
-      <div class="brandbar-image brandbar-image-portal"></div>
+      <div class="brandbar-image brandbar-image-people"></div>
       <div class="container">
         <div class="brandbar-header">
           <div class="brandbar-heading">
             <h1 class="brandbar-title"><abbr title="Accessibility">A11Y</abbr> Portal</h1>
-            <p class="brandbar-lead">We help make ING accessible to ALL people, with our without disabilities</p>
+            <p class="brandbar-lead">We help make [COMPANY NAME] accessible to ALL people, with or without disabilities</p>
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@
                 <img class="card-img-top mt-2 mb-4 img-fluid" src="images/a11y-champs.png" alt="">
                 <p>The purpose of personas is to make the users seem more real, to help designers keep realistic ideas of users throughout the design process.</p>
               </div>
-              <a href="/basics/fundamentals/personas.html" class="link-plug-on">
+              <a href="/basics/essentials/personas.html" class="link-plug-on">
                 <span class="icon icon-users icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> See al Personas
               </a>
             </div>
@@ -157,46 +157,6 @@
                 <span class="icon icon-accessibility icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> More on Do's and Dont's
               </a>
             </div>
-
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="images/tile-ForwardPlanning.jpg" alt="">
-              <div class="card-block">
-                <div role="heading" aria-level="3" class="card-title">Training</div>
-                <p class="lead"><strong>We would also like YOU to become a champ!</strong></p>
-                <p>Based on global conventions and standards, Team A11Y provides training that builds upon the baseline. The training can be given in different formats to match the needs of different disciplines, e.g. Customer Journey Experts, Developers and Designers/UX, and different experience levels, from ad-hoc solutions and presentation to complete curriculums.</p>
-              </div>
-              <div>
-                <a href="/training/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-like icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Training formats
-                </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title" id="responsibilities">
-                  Responsibilities for:
-                </h3>
-                <ul class="list-icons list-linklist m-0" aria-labelledby="responsibilities">
-                  <li>
-                    <a href="guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
-                  </li>
-                  <li>
-                    <a href="guidelines/fundamentals/responsibilities.html#developers">Developers</a>
-                  </li>
-                  <li>
-                    <a href="guidelines/fundamentals/responsibilities.html#editors">Editors</a>
-                  </li>
-                  <li>
-                    <a href="guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-6 col-lg-4">
             
             <div class="card mb-4">
               <img class="card-img-top img-fluid" src="images/tile-desktop-mobile.jpg" alt="">
@@ -211,6 +171,55 @@
               </div>
             </div>
 
+            <div class="card">
+              <div class="card-block">
+                <h3 class="card-title" id="training-a11y-champs">
+                  Training A11Y Champs
+                </h3>
+                <ul class="list-icons list-linklist m-0" aria-labelledby="training-a11y-champs">
+                  <li>
+                    <a href="../../training/fundamentals/home.html#champ-training">Become a Champ yourself</a>
+                  </li>
+                  <li>
+                    <a href="../../training/quiz/fundamentals.html">See all A11Y quiz questions</a>
+                  </li>
+                  <li>
+                    <a href="../../good-bad/home.html">Good / Bad Examples</a>
+                  </li>
+                  <li>
+                    <a href="../../general/contact.html">Need help? Ask a Champ!</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+
+            <div class="card mb-4">
+              <img class="card-img-top img-fluid border-grey-light" src="../../images/tile-responsibility-large.jpg" alt="">
+              <div class="card-block">
+                <h3 class="card-title">Responsibilities</h3>
+                <p class="lead"><strong>What is your role in accessibility?</strong></p>
+                <p class="card-text">Everyone should play his or her part for inclusive design, find out what's yours:</p>
+                <ul class="list-icons list-linklist m-0">
+                  <li>
+                    <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
+                  </li>
+                  <li>
+                    <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
+                  </li>
+                  <li>
+                    <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
+                  </li>
+                  <li>
+                    <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <div class="card mb-4">
                 <img class="card-img-top img-fluid" src="images/tile-tools.jpg" alt="">
               <div class="card-block">
@@ -219,7 +228,7 @@
                 <p class="card-text">These tools can help you find a wide range of accessibility issues. Developers and designers have to look no further and get a solid starting point by using this selection. They can be sure that they are using the same tools as their peers.</p>
               </div>
               <div>
-                <a href="/basics/fundamentals/tools.html" class="link-plug-on">
+                <a href="/basics/essentials/tools.html" class="link-plug-on">
                   <span class="icon icon-wrench icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Selected tools
                 </a>
               </div>
@@ -239,7 +248,7 @@
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -248,7 +257,7 @@
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="/basics/general/contact.html">Contact</a>
+            <a href="/general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -40,11 +40,12 @@
     <div class="pipe-links bg-grey">
       <div class="container pt-2 pb-1">
         <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+          <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item">Guidelines</li>
           <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
           <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -54,7 +55,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
         <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
       </a>
 
@@ -72,17 +73,19 @@
                 <ul class="pagination pagination-navbar">
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/home.html">Home</a></li>
                   <li class="page-item"><a class="page-link active" href="../../guidelines/fundamentals/principles.html" aria-current="page">Principles <span class="sr-only">(current)</span></a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/responsibilities.html">Responsibilities</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/how-to-test.html">How to Test</a></li>
+                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/testing.html">Testing</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/summary.html">Summary</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/glossary.html">Glossary</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/references.html">References</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="../../guidelines/design/visual-design.html">Design</a></li>
               <li class="nav-item"><a class="nav-link" href="../../guidelines/content/editorial.html">Content</a></li>
               <li class="nav-item"><a class="nav-link" href="../../guidelines/code/audio-and-video.html">Code</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../guidelines/e-documents/pdf.html">E-Documents</a>
+              </li>
             </ul>
+
           </div>
 
         </div>
@@ -112,9 +115,11 @@
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
           <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#standards">Standards</a></li>
-          <li><a href="#user-interface-controls">User Interface Controls</a></li>
-          <li><a href="#platform-accessibility">Platform accessibility</a></li>
+          <li><a href="#wai-w3c">WAI W3C</a></li>
+          <li><a href="#wcag">WCAG</a></li>
+          <li><a href="#wai-aria">WAI-ARIA</a></li>
+          <li><a href="#material-design">Material Design</a></li>
+          <li><a href="#human-interface-guidelines">Human Interface Guidelines</a></li>
         </ul>
       
       </div>          
@@ -138,7 +143,7 @@
                 
                 <p class="lead"><strong>A principle approach to design and development</strong></p>
                 
-                <p>These three principles embody an approach to the design and development of inclusive and usable applications and websites for all.</p>
+                <p>None documented</p>
 
               </div>
             </div>
@@ -151,8 +156,14 @@
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
-                
-                <p>None documented</p>
+
+                <h4 class="heading-s">Basics</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../basics/fundamentals/principles.html#introduction">Introduction</a></li>
+                  <li><a href="../../basics/fundamentals/principles.html#standards">Standards</a></li>
+                  <li><a href="../../basics/fundamentals/principles.html#user-interface-controls">User Interface Controls</a></li>
+                  <li><a href="../../basics/fundamentals/principles.html#platform-accessibility">Platform accessibility</a></li>
+                </ul>
 
               </div>
               
@@ -165,10 +176,10 @@
       </div>
     </section>
 
-    <section class="full-cover bg-faded" role="region" id="standards" aria-labelledby="title-standards">
+    <section class="full-cover bg-faded" role="region" id="wai-w3c" aria-labelledby="title-wai-w3c">
       <div class="container">
 
-        <h2 class="full-cover-title" id="title-standards">Standards</h2>
+        <h2 class="full-cover-title" id="title-wai-w3c">WAI W3C</h2>
 
         <div class="text-right to-top">
           <a href="#totop" rel="nofollow">To Top</a>
@@ -180,13 +191,28 @@
 
             <div class="card">
               <div class="card-block">
+
+                <p class="lead"><strong>WAI: Strategies, guidelines, resources to make the Web accessible to people with disabilities</strong></p>
+                <p>Inclusive design, design for all, digital inclusion, universal usability, and similar efforts address a broad range of issues in making technology available to and usable by all people whatever their abilities, age, economic situation, education, geographic location, language, etc.</p>
+                <p>Accessibility focuses on people with disabilities — people with auditory, cognitive, neurological, physical, speech, and visual impairments. The documents below explore some of the overlaps between inclusive design and web accessibility, and help managers, designers, developers, policy makers, researchers, and others optimize their efforts in these overlapping areas.</p>
                 
-                <h3 class="card-title">Use platform and web standards as intended</h3>
-
-                <p>Always use web and platform specific standards as intended. When standards and guidelines are implemented using non-standard techniques there is a risk that users who are dependant on platform specific accessibility features such as accessibility
-                  settings and screen readers will be excluded from accessing the content.</p>
-
-                <p>Platform specific guidelines include the <a href="https://developer.apple.com/technologies/ios/accessibility.html">iOS Accessibility Guidelines</a>, the <a href="http://developer.android.com/design/index.html">Android User Interface Guidelines</a>              and the <a href="http://developer.android.com/guide/topics/ui/accessibility/index.html">Designing for Accessibility</a> portion of the Android guidelines. For the web there are the <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines</a>              as well as the <a href="http://www.w3.org/WAI/mobile/">Mobile Accessibility resources</a> from W3C.</p>
+                <h3 class="heading-s">WAI develops...</h3>
+                <ul>
+                  <li>guidelines widely regarded as the international standard for Web accessibility</li>
+                  <li>support materials to help understand and implement We
+                  <li>Standards</li>
+                  <li>Testing</li>
+                  <li>Tutorials</li>
+                  <li>Guidance</li><li>
+                    <a href="https://www.w3.org/WAI/intro/components.php">Essential Components of Web Accessibility</a>
+                    <ul>
+                      <li>Web Content Accessibility Guidelines (WCAG)</li>
+                      <li>Accessible Rich Internet Applications (WAI ARIA)</li>
+                      <li>Authoring Tool Accessibility Guidelines (ATAG)</li>
+                      <li>User Agent Accessibility Guidelines (UAAG)</li>
+                    </ul>
+                  </li>
+                </ul>
 
               </div>
             </div>
@@ -199,8 +225,11 @@
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
-                
-                <p>None documented</p>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
+                  <li><a href="https://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a></li>
+                </ul>
 
               </div>
               
@@ -213,10 +242,10 @@
       </div>
     </section>
 
-    <section class="full-cover bg-grey" role="region" id="user-interface-controls" aria-labelledby="title-user-interface-controls">
+    <section class="full-cover bg-grey" role="region" id="wcag" aria-labelledby="title-wcag">
       <div class="container">
 
-        <h2 class="full-cover-title" id="title-user-interface-controls">User Interface Controls</h2>
+        <h2 class="full-cover-title" id="title-wcag">WCAG</h2>
 
         <div class="text-right to-top">
           <a href="#totop" rel="nofollow">To Top</a>
@@ -228,11 +257,118 @@
 
             <div class="card">
               <div class="card-block">
-                
-                <h3 class="card-title">Use standard user interface controls where possible</h3>
 
-                <p>Standard UI controls, objects, and elements should be used to ensure a greater level of accessibility. Custom controls tend to not implement accessibility as fully as standard platform controls. For example in iOS standard controls will have
-                  traits assigned that are understood by VoiceOver and therefore users.</p>
+                <p class="lead"><strong>Web Content Accessibility Guidelines (WCAG) 2.0 covers a wide range of recommendations for making Web content more accessible.</strong></p>
+                <p>Following these guidelines will make content accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity, and combinations of these.</p>
+                <p>These guidelines address accessibility of web content on desktops, laptops, tablets, and mobile devices. Following these guidelines will also often make your Web content more usable to users in general.
+
+</p>
+
+                <h3 class="heading-s">Summary</h3>
+
+                <ul>
+                  <li>
+                    <a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a>
+                    <ul>
+                      <li>ISO Standard: ISO/IEC 40500:2012</li>
+                      <li>Globally referenced in law</li>
+                    </ul>
+                  </li>
+                  <li>
+                    The 4 Main Principles
+                    <ul>
+                      <li>Perceivable</li>
+                      <li>Operable</li>
+                      <li>Understandable</li>
+                      <li>Robust</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Guidelines &amp; Success Criteria
+                    <ul>
+                      <li>12 guidelines</li>
+                      <li>25 A SC</li>
+                      <li>13 AA SC</li>
+                      <li>23 AAA SC</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Supporting Documents
+                    <ul>
+                      <li>Normative - How to Meet</li>
+                      <li>Informative - Understanding</li>
+                      <li>Examples - Techniques
+                        <ul>
+                          <li>Sufficient</li>
+                          <li>Advisory</li>
+                          <li>Failures</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Conformance requirements, all must be satisfied
+                    <ol>
+                      <li>One of the A-Levels is met in full</li>
+                      <li>Is for full Web pages only (no parts excluded)</li>
+                      <li>Complete processes</li>
+                      <li>Only Accessibility-Supported Ways of Using Technologies</li>
+                      <li>Non-Interference</li>
+                    </ol>
+                  </li>
+                  <li>
+                    Conformance claims (Optional)
+                    <ol>
+                      <li>Date</li>
+                      <li>Guidelines title, version and URI</li>
+                      <li>Conformance level</li>
+                      <li>A concise description of the Web pages</li>
+                      <li>Web content technologies relied upon</li>
+                    </ol>
+                  </li>
+                </ul>
+
+                <h4 class="heading-xs">Principle 1 – Perceivable</h4>
+
+                <p>Output of web content available through multiple sensory modalities.</p>
+                <ul>
+                  <li>Alternatives, Time-based, Adaptable, Distinguishable</li>
+                  <li>Sight, Sound, Touch</li>
+                  <li>The Universal Format: Digital Text</li>
+                  <li>ARIA Live regions</li>
+                  <li>Only way to access is to know it’s there</li>
+                </ul>
+
+                <h4 class="heading-xs">Principle 2 – Operable</h4>
+
+                <p>A Declaration of (Device) Independence.</p>
+                <ul>
+                  <li>Keyboard, Time, Seizures, Navigable</li>
+                  <li>Device independant working</li>
+                  <li>Never to be trapped</li>
+                  <li>Focus clearly present</li>
+                  <li>Keyboards: The (almost) Universal Input Device</li>
+                </ul>
+
+                <h4 class="heading-xs">Principle 3 – Understandable</h4>
+
+                <p>Content and interfaces that people can comprehend.</p>
+                <ul>
+                  <li>Readable, Predictable, Input Assistance</li>
+                  <li>Specify Language</li>
+                  <li>Reading level</li>
+                  <li>Consistency</li>
+                  <li>Error Prevention and Correction</li>
+                </ul>
+
+                <h4 class="heading-xs">Principle 4 – Robust</h4>
+
+                <p>Compatibility with a broad range of user agents, including assistive technologies.</p>
+                <ul>
+                  <li>Compatible</li>
+                  <li><a href="https://www.w3.org/TR/aria-in-html/#rule1">2.1 First rule of ARIA use</a></li>
+                  <li>Name, Role, and Value of Interactive Components</li>
+                </ul>
 
               </div>
             </div>
@@ -245,8 +381,38 @@
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
-                
-                <p>None documented</p>
+
+                <h4 class="heading-s">Guidelines</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../guidelines/fundamentals/principles.html">Principles</a></li>
+                </ul>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/">How to Meet WCAG 2.0</a></li>
+                  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0</a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG-TECHS/">Techniques for WCAG 2.0</a></li>
+                </ul>
+
+                <h4 class="heading-s">Task Forces</h4>
+                <a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group (AG WG / WCAG)</a>                  
+                <ul class="list-icons list-linklist">
+                  <li>Accessibility Conformance Testing (ACT) Task Force</li>
+                  <li>Cognitive Accessibility Task Force</li>
+                  <li>Low Vision Accessibility Task Force</li>
+                  <li>Mobile Accessibility Task Force</li>
+                  <li>Silver Task Force (WCAG 3.0)</li>
+                </ul>
+
+                <h4 class="heading-s">Components</h4>
+                <a href="https://www.w3.org/WAI/intro/components.php">Essential Components of Web Accessibility</a>
+                <ul>
+                  <li>Web Content Accessibility Guidelines (WCAG)</li>
+                  <li>Authoring Tool Accessibility Guidelines (ATAG)</li>
+                  <li>User Agent Accessibility Guidelines (UAAG)</li>
+                </ul>
 
               </div>
               
@@ -259,10 +425,10 @@
       </div>
     </section>
 
-    <section class="full-cover bg-faded" role="region" id="platform-accessibility" aria-labelledby="title-platform-accessibility">
+    <section class="full-cover bg-faded" role="region" id="wai-aria" aria-labelledby="title-wai-aria">
       <div class="container">
 
-        <h2 class="full-cover-title" id="title-platform-accessibility">Platform accessibility</h2>
+        <h2 class="full-cover-title" id="title-wai-aria">WAI-ARIA</h2>
 
         <div class="text-right to-top">
           <a href="#totop" rel="nofollow">To Top</a>
@@ -274,31 +440,24 @@
 
             <div class="card">
               <div class="card-block">
-                
-                <h3 class="card-title">Support platform accessibility</h3>
 
-                <p>All content and functionality must work alongside, and not suppress, native accessibility and features and settings.</p>
+                <p class="lead"><strong>ARIA: Defines a way to make Web content and Web applications more accessible to people with disabilities.</strong></p>
+                <p>Accessibility of web content requires semantic information about widgets, structures, and behaviors, in order to allow assistive technologies to convey appropriate information to persons with disabilities.</p>
+                <p>This specification provides an ontology of roles, states, and properties that define accessible user interface elements and can be used to improve the accessibility and interoperability of web content and applications. These semantics are designed to allow an author to properly convey user interface behaviors and structural information to assistive technologies in document-level markup.</p>
 
-                <h4 class="heading-s">Navigation methods</h4>
-
-                <p>All content must be accessible and navigable using the platforms navigation paradigm for assistive technology.</p>
-
-                <p>For example, the directional controller must be supported on Android to allow users of the TalkBack screen reader to review and navigate page content. Android requires that all elements be keyboard accessible so they can be accessed with a
-                  d-pad or track ball. Android 4.0 has lessened this requirement a bit by including an “Explore by Touch" method.</p>
-
-                <p>On iOS it is possible to hook items into the Accessibility API by ensuring all meaningful items have ‘accessibility enabled’ which in turn makes them focusable.</p>
-
-                <h4 class="heading-s">Support platform assistive technologies or features</h4>
-
-                <p>When applications or sites block, disable, or interfere with platform specific accessibility features or technology, users with disabilities may not be able to use the site or app. Potential issues include suppressing zoom on websites or disabling
-                  the ability to highlight and copy text in HTML and therefore ‘Speak Text’ features.</p>
-
-                <p>Some users with disabilities may require multiple accessibility features because they have multiple disabilities. For example, a user may be deaf and blind or may have low vision and unable to use a pointing device or touch screen. Multiple
-                  modes of operation should be supported allowing users to access content according to their preferences.</p>
-
-                <p>On Android and iOS for example, built-in keyboard support should not prevent other standard touch events. iOS accessibility features and the API are designed to make accessibility information and input methods available to multiple disability
-                  types however some optimisation such as the deliberate misspelling of an accessibility label or hint to ensure correct pronunciation can make the content inaccessible to other disability types - for example, users of Braille who are deaf
-                  blind.</p>
+                <ul class="list-icons list-checklist">
+                  <li>The Roles Model
+                    <ul>
+                      <li>Abstract Roles</li>
+                      <li>Widget Roles</li>
+                      <li>Document Structure</li>
+                      <li>Landmark Roles</li>
+                    </ul>
+                  </li>
+                  <li>Supported States and Properties</li>
+                  <li>Managing Focus</li>
+                  <li>Conformance</li>
+                </ul>
 
               </div>
             </div>
@@ -311,8 +470,18 @@
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
-                
-                <p>None documented</p>
+
+                <h4 class="heading-s">Training</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../training/fundamentals/guidelines.html#wai-aria">Accessible Rich Internet Applications (WAI-ARIA)</a></li>
+                  <li><a href="../../training/code/wai-aria.html">Custom JavaScript / ARIA Widgets - Code</a></li>
+                </ul>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+                  <li><a href="https://www.w3.org/TR/wai-aria-practices/">WAI-ARIA Authoring Practices 1.1</a></li>
+                </ul>
 
               </div>
               
@@ -322,6 +491,111 @@
 
         </div>
 
+      </div>
+    </section>
+
+    <section class="full-cover bg-grey" role="region" id="material-design" aria-labelledby="title-material-design">
+      <div class="container">
+
+        <h2 class="full-cover-title" id="title-material-design">Material Design</h2>
+
+        <div class="text-right to-top">
+          <a href="#totop" rel="nofollow">To Top</a>
+        </div>
+        
+        <div class="row">
+
+          <div class="col-md-7">
+
+            <div class="card">
+              <div class="card-block">
+
+                <p class="lead"><strong>Material Design: a unified system that combines theory, resources, and tools for crafting digital experiences.</strong></p>
+                <p>Challenges to create a visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. This is material design. This spec is a living document that will be updated as we continue to develop the tenets and specifics of material design.</p>
+                
+                <h3 class="heading-s">Material is the metaphor</h3>
+                <p>A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.</p>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-5">
+
+            <div class="card">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
+                  <li><a href="https://material.io/">Material Design</a></li>
+                </ul>
+
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="full-cover bg-faded" role="region" id="human-interface-guidelines" aria-labelledby="title-human-interface-guidelines">
+      <div class="container">
+
+        <h2 class="full-cover-title" id="title-human-interface-guidelines">Human Interface Guidelines</h2>
+
+        <div class="text-right to-top">
+          <a href="#totop" rel="nofollow">To Top</a>
+        </div>
+        
+        <div class="row">
+
+          <div class="col-md-7">
+
+            <div class="card">
+              <div class="card-block">
+
+                <p class="lead"><strong>Design Principles: To maximize impact and reach, keep the following principles in mind as you imagine your app’s identity.</strong></p>
+                <p>As an app designer, you have the opportunity to deliver an extraordinary product that rises to the top of the App Store charts. To do so, you'll need to meet high expectations for quality and functionality.</p>
+                
+                <h3 class="heading-s">Three primary themes differentiate iOS from other platforms:</h3>
+                <ul>
+                  <li><strong>Clarity</strong> Throughout the system, text is legible at every size, icons are precise and lucid, adornments are subtle and appropriate, and a sharpened focus on functionality motivates the design. Negative space, color, fonts, graphics, and interface elements subtly highlight important content and convey interactivity.
+
+</li>
+                  <li><strong>Deference</strong> Fluid motion and a crisp, beautiful interface help people understand and interact with content while never competing with it. Content typically fills the entire screen, while translucency and blurring often hint at more. Minimal use of bezels, gradients, and drop shadows keep the interface light and airy, while ensuring that content is paramount.</li>
+                  <li><strong>Depth</strong> Distinct visual layers and realistic motion convey hierarchy, impart vitality, and facilitate understanding. Touch and discoverability heighten delight and enable access to functionality and additional content without losing context. Transitions provide a sense of depth as you navigate through content.</li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-5">
+
+            <div class="card">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
+                  <li><a href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/">Human Interface Guidelines - Apple</a></li>
+                </ul>
+
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
     </section>
@@ -357,16 +631,16 @@
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
                 </li>
               </ul>
             </div>
@@ -377,7 +651,7 @@
 
         <div class="col-md-4">
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>
               <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
@@ -400,7 +674,7 @@
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -409,7 +683,7 @@
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../basics/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -39,13 +39,12 @@
     <div class="pipe-links bg-grey">
       <div class="container pt-2 pb-1">
         <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+          <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item">Guidelines</li>
           <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
-          <li class="list-inline-item">
-            <a href="../../sitemap/sitemap-basics.html">Sitemap</a>
-          </li>
+          <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -55,7 +54,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
         <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
       </a>
 
@@ -85,6 +84,9 @@
                   <li class="page-item"><a class="page-link active" href="../../guidelines/code/forms.html" aria-current="page">Forms <span class="sr-only">(current)</span></a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/code/scripts-and-dynamic-content.html">Scripts and Dynamic Content</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../guidelines/e-documents/pdf.html">E-Documents</a>
               </li>
             </ul>
           </div>
@@ -166,7 +168,7 @@
                   <li><a href="#testing-labelling-form-controls">Testing</a></li>
                 </ul>
 
-                <h3 class="card-title">Training</h3>
+                <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../training/design/form-labels-instructions-and-validation.html#labels">Labels</a></li>
                   <li><a href="../../training/design/form-labels-instructions-and-validation.html#group-labels">Group Labels</a></li>
@@ -197,12 +199,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[FNLabel setText:NSLocalizedString(@"First Name", nil)];
@@ -212,12 +214,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[FNLabel setText:NSLocalizedString(@"First Name", nil)];</code></pre>
@@ -230,12 +232,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="java"><TextView android:id="@+id/password_label" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Password"></TextView>
@@ -245,12 +247,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>On-screen text followed by a text input, the text input does not have an accessible label or uses <code>contentDescription.</code></p>
@@ -268,12 +270,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="html"><label for="uname">Username:</label>
@@ -283,12 +285,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="html"><div>Username:
@@ -382,7 +384,7 @@
                   <li><a href="#testing-form-inputs">Testing</a></li>
                 </ul>
 
-                <h3 class="card-title">Training</h3>
+                <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../training/design/form-labels-instructions-and-validation.html#instructions-and-other-helpful-info">Instructions & Other Helpful Info</a></li>
                   <li><a href="../../training/design/form-labels-instructions-and-validation.html#dynamic-forms-and-custom-widgets">Dynamic Forms & Custom Widgets</a></li>
@@ -410,12 +412,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">// Example 1 - set the default input type for a text field
@@ -430,12 +432,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">// No indication of input type or gestures expected
@@ -451,12 +453,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="java">// Example 1 - setting the default keyboard type
@@ -469,12 +471,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="java">// Example 1 - not setting the default keyboard type to number for a number field
@@ -504,12 +506,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p><code>input[type=range]</code> with descriptive fallback text in associated label:</p>
@@ -521,12 +523,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>No indication of expected input:</p>
@@ -621,7 +623,7 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                   <li><a href="#testing-form-layout">Testing</a></li>
                 </ul>
 
-                <h3 class="card-title">Training</h3>
+                <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../training/design/form-labels-instructions-and-validation.html#labels">Labels</a></li>
                 </ul>
@@ -757,7 +759,7 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                   <li><a href="#testing-grouping-form-elements">Testing</a></li>
                 </ul>
 
-                <h3 class="card-title">Training</h3>
+                <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../training/design/form-labels-instructions-and-validation.html#group-labels">Group Labels</a></li>
                 </ul>
@@ -781,12 +783,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[shipAddy setAccessibilityLabel:[NSString stringWithFormat: NSLocalizedString(@"Shipping Address:", @"Label title")]];
@@ -796,12 +798,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[shipAddy setAccessibilityLabel:[NSString stringWithFormat:@"Address"]];
@@ -817,12 +819,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="java"><RadioGroup android:layout_width="match_parent" android:id="@+id/radioGroup_1" android:orientation="horizontal">
@@ -835,12 +837,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Individual radio buttons that are not grouped together, yet are supposed to be exclusive:</p>
@@ -861,12 +863,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Correct use of name attribute ensures checking one radio button will uncheck the other:</p>
@@ -883,12 +885,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Incorrect use of the name attribute prevents correct keyboard access to radio buttons:</p>
@@ -991,9 +993,9 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
                   <li><a href="#testing-managing-focus">Testing</a></li>
                 </ul>
 
-                <h3 class="card-title">Training</h3>
+                <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="../../training/web/dynamic-updates.html#notifying-users-of-changes">Notifying Users of Changes</a></li>
+                  <li><a href="../../training/code/dynamic-updates.html#notifying-users-of-changes">Notifying Users of Changes</a></li>
                 </ul>
 
               </div>
@@ -1014,12 +1016,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">- (IBAction)dataValidation:(id)sender {
@@ -1030,12 +1032,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Code checks the contents of the field during edit and sends <code>sender resignFirstResponder </code> ; or assigns theFirstResponder to the next control when entry is complete.</p>
@@ -1048,12 +1050,12 @@ textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="java">//A toggle button and progress bar appear on the screen, focus does not switch automatically
@@ -1067,12 +1069,12 @@ final ProgressBar progressbar = (ProgressBar) findViewById(R.id.bars_progressBar
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="java">//A toggle button and progress bar appear on the screen and focus switches to the progress bar automatically
@@ -1096,12 +1098,12 @@ progressbar.requestFocus();</code></pre>
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Validating input after the user completes what is being entered, without moving focus:</p>
@@ -1118,12 +1120,12 @@ progressbar.requestFocus();</code></pre>
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <P>Validating input while the user is typing, and/or moving focus to the error message:</P>
@@ -1212,16 +1214,16 @@ progressbar.requestFocus();</code></pre>
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
                 </li>
               </ul>
             </div>
@@ -1232,7 +1234,7 @@ progressbar.requestFocus();</code></pre>
 
         <div class="col-md-4">
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>
               <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
@@ -1255,7 +1257,7 @@ progressbar.requestFocus();</code></pre>
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -1264,7 +1266,7 @@ progressbar.requestFocus();</code></pre>
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../basics/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

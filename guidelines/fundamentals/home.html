@@ -15,11 +15,11 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - A11Y Guidelines</title>
+  <title>Home - Fundamentals - A11Y Guidelines</title>
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -40,11 +40,12 @@
     <div class="pipe-links bg-grey">
       <div class="container pt-2 pb-1">
         <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+          <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item">Guidelines</li>
           <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
           <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -54,7 +55,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
           <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
         </a>
 
@@ -72,10 +73,8 @@
                 <ul class="pagination pagination-navbar">
                   <li class="page-item"><a class="page-link active" href="../../guidelines/fundamentals/home.html" aria-current="page">Home<span class="sr-only">(current)</span></a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/principles.html">Principles</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/responsibilities.html">Responsibilities</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/how-to-test.html">How to Test</a></li>
+                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/testing.html">Testing</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/summary.html">Summary</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/glossary.html">Glossary</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/references.html">References</a></li>
                 </ul>
               </li>
@@ -87,6 +86,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../../guidelines/code/audio-and-video.html">Code</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../guidelines/e-documents/pdf.html">E-Documents</a>
               </li>
             </ul>
           </div>
@@ -122,37 +124,28 @@
           <div class="col-md-6 col-lg-4">
 
             <div class="card mb-4">
-              <img class="card-img-top img-fluid border-grey-light" src="../../images/tile-responsibility-large.jpg" alt="">
-              <div class="card-block">
-                <h3 class="card-title">Responsibilities</h3>
-                <p class="lead">What is your role in accessibility?</p>
-                <p class="card-text">Everyone should play his or her part for inclusive design, find out what's yours:</p>
-                <ul class="list-icons list-linklist m-0">
-                  <li>
-                    <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
-                  </li>
-                  <li>
-                    <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
-                  </li>
-                  <li>
-                    <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
-                  </li>
-                  <li>
-                    <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="../../images/tile-design.jpg" alt="">
               <div class="card-block">
                 <div role="heading" aria-level="3" class="card-title">Design</div>
-                <img class="card-img-top mb-4 img-fluid" src="../../images/tile-design.jpg" alt="">
                 <p class="card-text">From colours, contrast and focus, to touch target, actionable elements and adjustability. Design covers a broad spectrum for all of us to be aware of. Design your specs, visuals and code according to these standards.</p>
               </div>
               <div>
                 <a href="../../guidelines/design/visual-design.html" class="link-plug-on">
                   <span class="icon icon-edit icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Design Guidelines</a>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="../../images/tile-ForwardPlanning-Large.jpg" alt="">
+              <div class="card-block">
+                <div role="heading" aria-level="3" class="card-title">Training</div>
+                <p class="lead"><strong>We would also like YOU to become a champ!</strong></p>
+                <p>Based on global conventions and standards, Team A11Y provides training that builds upon the baseline. The training can be given in different formats to match the needs of different disciplines, e.g. Customer Journey Experts, Developers and Designers/UX, and different experience levels, from ad-hoc solutions and presentation to complete curriculums.</p>
+              </div>
+              <div>
+                <a href="/training/fundamentals/home.html" class="link-plug-on">
+                  <span class="icon icon-like icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Training Formats
+                </a>
               </div>
             </div>
 
@@ -162,26 +155,26 @@
 
             <div class="card mb-4">
               <div class="card-block">
-                <div role="heading" aria-level="3" class="card-title">How to Test</div>
-                <img class="card-img-top mt-4 mb-4 img-fluid" src="../../images/computers-with-A11y-logo2.png" alt="">
-                <p class="card-text">Most Guidelines are best practices which can easily be tested with specific objective criteria. They are technologically possible to achieve with current assistive technology on desktop and mobile devices. Others are less testable but considered core to accessible mobile website and apps.</p>
-              </div>
-              <div>
-                <a href="../../guidelines/fundamentals/how-to-test.html" class="link-plug-on">
-                  <span class="icon icon-check icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> How to Test
-                </a>
-              </div>
-            </div>
-
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="../../images/tile-reading.jpg" alt="">
-              <div class="card-block">
                 <h3 class="card-title">Content</h3>
+              <img class="card-img-top mb-4 img-fluid" src="../../images/tile-reading.jpg" alt="">
                 <p class="card-text">Clear, simple, consistent and understandable content for all users to comprehend. Where, when and how to supply extra text for clarity is where this section adds value to a more inclusive world. Check out the advice based on lots of research!</p>
               </div>
               <div>
                 <a href="../../guidelines/content/editorial.html" class="link-plug-on">
                   <span class="icon icon-chat icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Content Guidelines</a>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+                <div role="heading" aria-level="3" class="card-title">Testing</div>
+                <img class="card-img-top mt-4 mb-4 img-fluid" src="../../images/computers-with-A11y-logo2.png" alt="">
+                <p class="card-text">Most Guidelines are best practices which can easily be tested with specific objective criteria. They are technologically possible to achieve with current assistive technology on desktop and mobile devices. Others are less testable but considered core to accessible mobile website and apps.</p>
+              </div>
+              <div>
+                <a href="../../guidelines/fundamentals/testing.html" class="link-plug-on">
+                  <span class="icon icon-check icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Testing
+                </a>
               </div>
             </div>
 
@@ -201,7 +194,7 @@
                     <a href="../../good-bad/home.html">Good / Bad Examples</a>
                   </li>
                   <li>
-                    <a href="../../basics/general/contact.html">Need help? Ask a Champ!</a>
+                    <a href="../../general/contact.html">Need help? Ask a Champ!</a>
                   </li>
                 </ul>
               </div>
@@ -212,10 +205,23 @@
           <div class="col-md-6 col-lg-4">
 
             <div class="card mb-4">
+              <img class="card-img-top img-fluid" src="../../images/tile-code.jpg" alt="">
+              <div class="card-block">
+                <div role="heading" aria-level="3" class="card-title">Code</div>
+                <p class="lead"><strong>A proper codebase following the standards for the specific platforms and technologies creates robustness.</strong></p>
+                <p>Robust in this case means all technologies and tools of choice, according to people's needs, can work with the products created, 100% guaranteed!</p>
+              </div>
+              <div>
+                <a href="../../guidelines/code/audio-and-video.html" class="link-plug-on">
+                  <span class="icon icon-wrench icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Code Guidelines</a>
+              </div>
+            </div>
+
+            <div class="card mb-4">
               <img class="card-img-top img-fluid" src="../../images/experts.jpg" alt="">
               <div class="card-block">
                 <h3 class="card-title">Global Conventions</h3>
-                <p class="lead">What were those standards like again?</p>
+                <p class="lead"><strong>What were those standards like again?</strong></p>
                 <p class="card-text">When people are new to accessibility, it's easy for them to get overwhelmed by all of the standards, global conventions, laws, and regulations. Providing Baseline Guidelines is what the accessibility team does. So don't worry, we have
                   it covered and are always ready to help.
                 </p>
@@ -223,19 +229,6 @@
               <a href="../../guidelines/fundamentals/references.html" class="link-plug-on">
                 <span class="icon icon-document icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> References Guidelines
               </a>
-            </div>
-
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="../../images/tile-code.jpg" alt="">
-              <div class="card-block">
-                <div role="heading" aria-level="3" class="card-title">Code</div>
-                <p class="lead">A proper codebase following the standards for the specific platforms and technologies creates robustness.</p>
-                <p>Robust in this case means all technologies and tools of choice, according to people's needs, can work with the products created, 100% guaranteed!</p>
-              </div>
-              <div>
-                <a href="../../guidelines/code/audio-and-video.html" class="link-plug-on">
-                  <span class="icon icon-wrench icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Code Guidelines</a>
-              </div>
             </div>
 
           </div>
@@ -252,7 +245,7 @@
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -261,7 +254,7 @@
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="https://18c124d768e2453383ddbe1aa49b65c3.codepen.website../../guidelines/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

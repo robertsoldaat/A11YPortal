@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -39,13 +39,12 @@
     <div class="pipe-links bg-grey">
       <div class="container pt-2 pb-1">
         <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+          <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item">Guidelines</li>
           <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
-          <li class="list-inline-item">
-            <a href="../../sitemap/sitemap-basics.html">Sitemap</a>
-          </li>
+          <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -55,7 +54,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
         <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
       </a>
 
@@ -85,6 +84,9 @@
                   <li class="page-item"><a class="page-link" href="../../guidelines/code/forms.html">Forms</a></li>
                   <li class="page-item"><a class="page-link active" href="../../guidelines/code/scripts-and-dynamic-content.html" aria-current="page">Scripts and Dynamic Content <span class="sr-only">(current)</span></a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../guidelines/e-documents/pdf.html">E-Documents</a>
               </li>
             </ul>
           </div>
@@ -185,12 +187,12 @@
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">// Example 1 - checking a class is available
@@ -220,12 +222,12 @@ if #available(iOS 10.0, *) {
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="java">if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -244,12 +246,12 @@ else {
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="html"><!-- Example 1 - HTML content that does not rely on JavaScript or CSS enhancement to function -->
@@ -274,12 +276,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="html"><!-- Example 1 - JavaScript based link -->
@@ -386,7 +388,7 @@ if("geolocation" in navigator) { ... }
                   <li><a href="#testing-controlling-media">Testing</a></li>
                 </ul>
                 
-                <h3 class="card-title">Training</h3>
+                <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../training/design/multimedia-animations-and-motion.html#animations-and-motion">Animations and Motion</a></li>
                   <li><a href="../../training/design/multimedia-animations-and-motion.html#auto-play">Auto-Play</a></li>
@@ -411,12 +413,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A news story ticker that updates the currently displayed news story every ten (10) seconds. A stop/pause button is provided along with a next and prior story buttons.</p>
@@ -425,12 +427,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A news story ticker that updates the currently displayed news story every ten (10) seconds. No buttons are provided to control the changing of the stories.</p>
@@ -443,12 +445,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A news story ticker that updates the currently displayed news story every ten (10) seconds. A stop/pause button is provided along with a next and prior story buttons.</p>
@@ -457,12 +459,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A news story ticker that updates the currently displayed news story every ten (10) seconds. No buttons are provided to control the changing of the stories.</p>
@@ -476,12 +478,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A moving carousel of news stories that change every 5 seconds, with controls to over-ride this behaviour:</p>
@@ -498,12 +500,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>A moving carousel of news stories that change every 5 seconds:</p>
@@ -618,12 +620,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[stockTicker setAccessibilityTraits:UIAccessibilityTraitStaticText | UIAccessibilityTraitUpdatesFrequently];</code></pre>
@@ -632,12 +634,12 @@ if("geolocation" in navigator) { ... }
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[stockTicker setAccessibilityTraits:UIAccessibilityTraitStaticText];
@@ -651,12 +653,12 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>Typical accessibility events are sent via the <code>sendAccessibilityEvent()</code> method and the event type <code>TYPE_WINDOW_STATE_CHANGED</code> is not sent unless a window or dialog opens.</p>
@@ -665,12 +667,12 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <p>The event type <code>TYPE_WINDOW_STATE_CHANGED</code> is when text changes even though a new window or dialog does not open.</p>
@@ -684,12 +686,12 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="html">&lt;head&gt;
@@ -704,15 +706,15 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
-                <pre><code class="html">&lt;body onload=setTimeout("location.href='http://www.ing.nl'",5000)&gt;
+                <pre><code class="html">&lt;body onload=setTimeout("location.href='http://www.company-name.com'",5000)&gt;
   <p>...Information...</p>
 &lt;/body&gt;
 
@@ -850,12 +852,12 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="html">&lt;head&gt;
@@ -882,12 +884,12 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
 
             <div class="collapsible">
               <h5 class="collapsible-control">
-                <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
               </h5>
               <div class="collapsible-target" hidden>
                 <pre><code class="html">&lt;head&gt;
@@ -1012,7 +1014,7 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
                   <li><a href="#testing-input-control">Testing</a></li>
                 </ul>
                 
-                <h3 class="card-title">Training</h3>
+                <h4 class="heading-s">Training</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../training/various/input-methods.html#mouse-input">Mouse Input</a></li>
                   <li><a href="../../training/various/input-methods.html#keyboard-input">Keyboard Input</a></li>
@@ -1119,16 +1121,16 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
                 </li>
               </ul>
             </div>
@@ -1139,7 +1141,7 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
 
         <div class="col-md-4">
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>
               <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
@@ -1162,7 +1164,7 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -1171,7 +1173,7 @@ UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil)</
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../basics/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

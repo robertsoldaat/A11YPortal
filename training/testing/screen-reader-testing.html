@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -40,11 +40,12 @@
     <div class="pipe-links bg-grey">
       <div class="container pt-2 pb-1">
         <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+          <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item"><a href="../../guidelines/fundamentals/home.html">Guidelines</a></li>
           <li class="list-inline-item">Training</li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
           <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -54,7 +55,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
           <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
         </a>
 
@@ -74,10 +75,10 @@
                 <a class="nav-link" href="../../training/design/images-svg-and-canvas.html">Design</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../training/web/semantic-structure-and-navigation.html">Web</a>
+                <a class="nav-link" href="../../training/content/editorial.html">Content</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../training/native/ios.html">Native</a>
+                <a class="nav-link" href="../../training/code/semantic-structure-and-navigation.html">Code</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="../../training/testing/testing-methods-and-tools.html" aria-current="true" id="main-menu">Testing <span class="sr-only">(current)</span></a>
@@ -163,9 +164,20 @@
                 <p>Learning a screen reader can seem intimidating at first, but by learning a few keystrokes and understanding how people use screen readers, you'll be able to test web content accessibility accurately and completely. </p>
 
                 <h3 class="heading-s">Summary</h3>
-                <p>Screen readers have revolutionized the way people with disabilities can access computers and the internet, but screen readers can't magically make web pages accessible if they weren't designed to be accessible in the first place. Dynamic
-                  content, in particular, can be tricky to make accessible to screen readers. Testing with screen readers is essential.</p>
-                <p>Learning a screen reader can be a bit intimidating at first, but with a few basic keystrokes (see the <a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Desktop%20Screen%20Readers%20Basic%20Keyboard%20Commands%20-%20Various%20-%20Summary%20and%20Checklist.pdf">Desktop Screen Readers Basic Keyboard Commands</a>                  handout), you can know enough to do basic accessibility testing. With practice, you can have a deep understanding of the challenges and solutions relevant to people who use screen readers.</p>
+                <p>Screen readers have revolutionized the way people with disabilities can access computers and the internet, but screen readers can't magically make web pages accessible if they weren't designed to be accessible in the first place. Dynamic content, in particular, can be tricky to make accessible to screen readers. Testing with screen readers is essential.</p>
+                <p>Learning a screen reader can be a bit intimidating at first, but with a few basic keystrokes (see the <a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Desktop%20Screen%20Readers%20Basic%20Keyboard%20Commands%20-%20Various%20-%20Summary%20and%20Checklist.pdf">Desktop Screen Readers Basic Keyboard Commands</a> handout), you can know enough to do basic accessibility testing. With practice, you can have a deep understanding of the challenges and solutions relevant to people who use screen readers.</p>
+
+                <h4 class="heading-s">Testing reasons for Screen Readers</h4>
+                <ul class="list-icons list-checklist">
+                  <li>To ensure content is accessible with today's technology</li>
+                  <li>Especially with dynamic content, JavaScript, and ARIA</li>
+                  <li>You can't just implement the ARIA specs without testing for garanties</li>
+                  <li>Add creative alternative methods when needed</li>
+                  <li>Helps identify problems with alt text, reading order, table markup, form elements</li>
+                  <li>Finds mistakes that you won't detect by automatic testing alone</li>
+                  <li>Compatible with screen readers also often work well for people with physical disabilities</li>
+                  <li>Not using a mouse, use a single-switch device instead of a keyboard, navigate in similar ways</li>
+                </ul>
 
               </div>
             </div>
@@ -177,34 +189,37 @@
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
-
-                <h4 class="heading-s">Deque University</h4>
-                <ul class="list-icons list-linklist toc-columns">
-                  <li><a href="https://dequeuniversity.com/class/screenreaders2/intro">Introduction - Deque University</a></li>
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Desktop%20Screen%20Readers%20Basic%20Keyboard%20Commands%20-%20Various%20-%20Summary%20and%20Checklist.pdf">Desktop Screen Readers Basic Keyboard Commands PDF</a></li>
-                </ul>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="/guidelines/fundamentals/how-to-test.html">How to test</a></li>
+                  <li><a href="/guidelines/fundamentals/testing.html">Testing</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
+                <h4 class="heading-s">Deque University</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://dequeuniversity.com/class/screenreaders2/intro">Introduction - Deque University</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Desktop%20Screen%20Readers%20Basic%20Keyboard%20Commands%20-%20Various%20-%20Summary%20and%20Checklist.pdf">Desktop Screen Readers Basic Keyboard Commands PDF</a></li>
                 </ul>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>This training is based on:</p>
-                <ul class="list-icons list-linklist">
-                  <li><a href="https://www.w3.org/TR/WCAG20/">WCAG: Web Content Accessibility Guidelines 2.0</a></li>
-                  <li><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
-                  <li><a href="https://developer.apple.com/design/">Apple Human Interface Guidelines</a></li>
-                  <li><a href="https://www.google.com/accessibility/">Google Accessibility</a></li>
-                </ul>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Miscellaneous</h4>
+                <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
-
             </div>
 
           </div>
@@ -221,19 +236,6 @@
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -259,9 +261,31 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+
+                <h4 class="heading-s">What are Screen Readers?</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Convert digital text into speech or Braille output</li>
+                  <li>Reads operating systems, software, web sites, and other digital assets</li>
+                  <li>Blind people use computers independently, no help from anyone!!!</li>
+                  <li>Means blind person can get jobs that require computer use</li>
+                  <li>Send emails, read about current events on the internet, play games, and anything else</li>
+                  <li>Help make the digital world an equal opportunity</li>
+                  <li>Can read many languages</li>
+                  <li>Can also output to refreshable Braille devices</li>
+                </ul>
+
+                <h4 class="heading-s">Who Uses Screen Readers?</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Blind individuals</li>
+                  <li>Individuals who are deaf and blind</li>
+                  <li>People with reading disabilities</li>
+                  <li>Persons who are illiterate</li>
+                  <li>People with dyslexia</li>
+                  <li>People sitting in a car</li>
+                  <li>Persons who prefer the text to be read to them</li>
+                  <li>Web accessibility testers</li>
+                </ul>
 
               </div>
             </div>
@@ -275,37 +299,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -323,19 +343,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -361,9 +368,15 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+
+                <h4 class="heading-s">Can Web Sites Detect Screen Readers?</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Yes, You can Sort of Detect Some Screen Readers, But... No, Not Really</li>
+                  <li>Concerns is it will result in entirely separate and unequal designs</li>
+                  <li>Fear is it will result in a worse experience for screen reader users</li>
+                  <li>Objection is that people don't want the web site to know they use them</li>
+                </ul>
 
               </div>
             </div>
@@ -377,37 +390,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -425,19 +434,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -463,8 +459,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -479,37 +474,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -527,19 +518,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -565,8 +543,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -581,37 +558,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -629,19 +602,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -667,8 +627,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -683,37 +642,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -731,19 +686,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -769,9 +711,13 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>From Freedom Scientific, now part of <a href="http://www.vfogroup.com/">VFO</a></li>
+                  <li>Works best with Internet Explorer</li>
+                  <li>Expensive, around $1000,-, also updates pricey</li>
+                  <li>40-Minute Demo Version, forbidden for regular testing!</li>
+                </ul>
 
               </div>
             </div>
@@ -785,37 +731,38 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
-                <p>None documented</p>
-
                 <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="http://www.freedomscientific.com/Products/Blindness/JAWS">JAWS official web page</a></li>
+                  <li><a href="https://dequeuniversity.com/class/screenreaders1/jaws-keyboard-shortcuts">JAWS keyboard shortcuts relevant to web accessibility testing</a></li>
+                  <li><a href="http://www.freedomscientific.com/training/training-JAWS-keystrokes.htm">Full list of JAWS keyboard shortcuts by Freedom Scientific</a></li>
+                  <li><a href="http://www.freedomscientific.com/Content/Documents/Manuals/JAWS/JAWS-Quick-Start-Guide.pdf">JAWS Quick Start Guide - PDF 545KB</a></li>
+                </ul>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -833,19 +780,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -871,9 +805,12 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>Open-source screen reader</li>
+                  <li>Works best with Firefox</li>
+                  <li>Free</li>
+                </ul>
 
               </div>
             </div>
@@ -887,37 +824,37 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
-                <p>None documented</p>
-
                 <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.nvaccess.org/">NV Access and NVDA official web page</a></li>
+                  <li><a href="https://dequeuniversity.com/class/screenreaders1/nvda-keyboard-shorcuts">NVDA keyboard shortcuts relevant to web accessibility testing</a></li>
+                  <li><a href="http://www.freedomscientific.com/training/training-JAWS-keystrokes.htm">NVDA user guide</a></li>
+                </ul>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -935,19 +872,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -973,8 +897,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -989,37 +912,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1037,19 +956,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1075,8 +981,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1091,37 +996,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1139,19 +1040,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1177,8 +1065,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1193,37 +1080,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1241,19 +1124,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1279,13 +1149,15 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>Free for all Window users</li>
+                  <li>Mature version for Window 10</li>
+                </ul>
 
               </div>
             </div>
-
+  
           </div>
 
           <div class="col-md-6">
@@ -1295,37 +1167,35 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
-                <p>None documented</p>
-
                 <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started">Get started with Narrator - Microsoft</a></li>
+                </ul>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1343,19 +1213,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1381,8 +1238,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1397,37 +1253,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1445,19 +1297,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1483,8 +1322,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1499,37 +1337,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1547,19 +1381,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1585,8 +1406,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1601,37 +1421,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1673,16 +1489,16 @@ None documented
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
                 </li>
               </ul>
             </div>
@@ -1693,7 +1509,7 @@ None documented
 
         <div class="col-md-4">
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>
               <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
@@ -1716,7 +1532,7 @@ None documented
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -1725,7 +1541,7 @@ None documented
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="https://18c124d768e2453383ddbe1aa49b65c3.codepen.website../../training/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

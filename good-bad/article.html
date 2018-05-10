@@ -16,13 +16,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Accessible Article Page - Good and Bad Demonstration - ING</title>
+  <title>Accessible Article Page - Good and Bad Demonstration - COMPANY NAME</title>
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
   <link rel="stylesheet" href="../styles/style.processed.min.css">
-  <link rel="stylesheet" href="https://www.ing.nl/assets/web/ng/css/bb4d737d.the-guide-styles-responsive.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -49,11 +49,12 @@
           <div class="col-md-6">
             <div class="pipe-links">
               <ul class="list-inline m-0" aria-label="section links">
-                <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+                <li class="list-inline-item"><a href="../../">Basics</a></li>
                 <li class="list-inline-item"><a href="../../guidelines/fundamentals/home.html">Guidelines</a></li>
                 <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
                 <li class="list-inline-item">Good / Bad</li>
                 <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -112,7 +113,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
           <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
         </a>
 
@@ -134,9 +135,6 @@
                   <li class="page-item"><a class="page-link active" href="../../good-bad/article.html" aria-current="page">Good <span class="sr-only">(current)</span></a></li>
                   <li class="page-item"><a class="page-link" href="../../good-bad/article-bad.html">Bad</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../good-bad/media.html">Media</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../../good-bad/request.html">Request</a>
@@ -202,7 +200,7 @@
               <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal04">04</button>
             </span>
             
-            <p>Team Accessibility (Team <abbr class="annot-relative btn-annot-outline" title="accessibility">A11Y <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal05">05</button></abbr>)  helps squads to remove the digital barriers and make ING websites and apps accessible to all people, with or without disabilities. The help consists of co-creation, laying out the digital baseline and provide training for accessibility champions.</p>
+            <p>Team Accessibility (Team <abbr class="annot-relative btn-annot-outline" title="accessibility">A11Y <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal05">05</button></abbr>)  helps squads to remove the digital barriers and make [COMPANY NAME] websites and apps accessible to all people, with or without disabilities. The help consists of co-creation, laying out the digital baseline and provide training for accessibility champions.</p>
             
             <h3 class="heading-l annot-relative btn-annot-outline">Why we promote accessibility <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal06">06</button></h3>
             
@@ -226,7 +224,7 @@
             
             <figure class="btn-annot-outline" role="group" aria-labelledby="figcaption">
               <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal09">09</button>
-              <img src="../../images/tile-ForwardPlanning.jpg" class="img-radius-l img-fluid" alt="People in the ING Emphathy Lab">
+              <img src="../../images/tile-ForwardPlanning.jpg" class="img-radius-l img-fluid" alt="People in the [COMPANY NAME] Emphathy Lab">
               <figcaption class="annot-relative btn-annot-outline" id="figcaption"><span><em>Four people in a room at desks with a laptop in an informal setting. One person is standing beside another, looking at a screen, seemingly helping out.</em> <button type="button" class="btn btn-annot" data-toggle="modal" data-target="#annotModal07">07</button></span></figcaption>
             </figure>
             
@@ -266,7 +264,7 @@
             <p>Interested in knowing more about accessibility? Let us know and we will visit you!</p>
             
             <div class="mt-4 mb-4 annot-relative">
-              <a href="../../basics/general/contact.html" target="_blank">Presentation on location <span class="icon icon-arrow-f-up-right icon-md icon-gray-dark mt-n2" role="img" aria-label="Opens in new window"></span></a>
+              <a href="../../general/contact.html" target="_blank">Presentation on location <span class="icon icon-arrow-f-up-right icon-md icon-gray-dark mt-n2" role="img" aria-label="Opens in new window"></span></a>
             </div>
             
           </div>
@@ -334,7 +332,7 @@
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -343,7 +341,7 @@
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../basics/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright
@@ -909,7 +907,7 @@ input, .form-control { max-width: 580px; }
               <pre class="highlight">
 <code class="html">
 <figure role="group" aria-labelledby="figcaption">
-  <img src="/planning.jpg" alt="People in the ING Emphathy Lab">
+  <img src="/planning.jpg" alt="People in the [COMPANY NAME] Emphathy Lab">
   <figcaption id="figcaption">
     <em>Four people in a room at desks...</em>
   </figcaption>

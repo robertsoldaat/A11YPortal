@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -40,11 +40,12 @@
   <div class="pipe-links bg-grey">
     <div class="container pt-2 pb-1">
       <ul class="list-inline m-0">
-        <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+        <li class="list-inline-item"><a href="../../">Basics</a></li>
         <li class="list-inline-item">Guidelines</li>
         <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
         <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
         <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -54,7 +55,7 @@
 
       <div class="sr-only" id="main-nav">Main Menu</div>
 
-      <a href="../../index.html" class="navbar-brand">
+      <a href="../../" class="navbar-brand">
         <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
       </a>
 
@@ -84,6 +85,9 @@
             <li class="nav-item">
               <a class="nav-link" href="../../guidelines/code/audio-and-video.html">Code</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../guidelines/e-documents/pdf.html">E-Documents</a>
+              </li>
           </ul>
         </div>
 
@@ -169,9 +173,10 @@
                 <li><a href="#testing-alternatives-for-non-text-content">Testing</a></li>
               </ul>
               
-              <h3 class="card-title">Training</h3>
+              <h4 class="heading-s">Training</h4>
               <ul class="list-icons list-linklist">
-                <li><a href="../../training/design/images-svg-and-canvas.html#image-alt-text">Image Alt Text</a></li>
+                  <li><a href="../../training/design/images-svg-and-canvas.html#image-alt-text">Image Alt Text - Design</a></li>
+                  <li><a href="../../training/content/editorial.html#images">Images - Content</a></li>
                 <li><a href="../../training/design/images-svg-and-canvas.html#advanced-alt-text-and-extended-descriptions">Advanced Alt Text & Extended Descriptions</a></li>
                 <li><a href="../../training/design/form-labels-instructions-and-validation.html#labels">Labels</a></li>
               </ul>
@@ -194,12 +199,12 @@
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[aButton setAccessibilityLabel:NSLocalizedString(@"Add to favourites video", @"Add to favourites button accessibility label")];</code></pre>
@@ -208,12 +213,12 @@
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">[aButton setAccessibilityLabel:NSLocalizedString(@"Adds this video to your favourites", @"Add to favourites button accessibility label")];</code></pre>
@@ -226,12 +231,12 @@
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="java"><button
@@ -246,12 +251,12 @@ android:contentDescription="Main Menu"></button></ImageView></code></pre>
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="java"><button
@@ -269,12 +274,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="html"><!-- Example 1 - image -->
@@ -287,12 +292,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="html"><!-- Example 1 - image -->
@@ -388,9 +393,10 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 <li><a href="#testing-decorative-content">Testing</a></li>
               </ul>
               
-              <h3 class="card-title">Training</h3>
+              <h4 class="heading-s">Training</h4>
               <ul class="list-icons list-linklist">
-                <li><a href="../../training/design/images-svg-and-canvas.html#image-alt-text">Image Alt Text</a></li>
+                  <li><a href="../../training/design/images-svg-and-canvas.html#image-alt-text">Image Alt Text - Design</a></li>
+                  <li><a href="../../training/content/editorial.html#images">Images - Content</a></li>
               </ul>
 
             </div>
@@ -411,12 +417,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
               <pre><code class="objectivec">[somethingDecorative setIsAccessibilityElement:NO];</code></pre>
@@ -424,12 +430,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
           </div>
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
               <pre><code class="objectivec">[somethingDecorative setIsAccessibilityElement:YES];</code></pre>
@@ -443,12 +449,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="java">//blue rectangle used for decoration that does not receive focus - in this case android:focusable is false by default
@@ -457,12 +463,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
           </div>
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="java">//blue rectangle used for decoration that can receive focus
@@ -476,12 +482,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
               <p>Button that is not currently used:</p>
@@ -492,12 +498,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
               <pre><code class="html"><button type="button"></button></code></pre>
@@ -615,12 +621,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
               <p>Hints are best used in situations where an item such as an item in a list has a dual purpose. For example, the item indicates the name of a audio article but when activated places the article in listening queue.</p>
@@ -633,12 +639,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -662,12 +668,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
 <pre><code class="html">
@@ -680,12 +686,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
 <pre><code class="html">
@@ -780,9 +786,9 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 <li><a href="#testing-roles-traits-properties">Testing</a></li>
               </ul>
               
-              <h3 class="card-title">Training</h3>
+              <h4 class="heading-s">Training</h4>
               <ul class="list-icons list-linklist">
-                <li><a href="../../training/web/javascript-and-aria.html#aria-concepts">ARIA Concepts</a></li>
+                <li><a href="../../training/code/wai-aria.html#aria-concepts">ARIA Concepts</a></li>
               </ul>
 
             </div>
@@ -805,12 +811,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                   <pre><code class="objectivec">// aButton is a happy button with a secret life
@@ -823,12 +829,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
           </div>
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                   <pre><code class="objectivec">// aButton is a happy button with a secret life
@@ -848,15 +854,15 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
-              <p>For the home page of the ING Global site:</p>
+              <p>For the home page of the [COMPANY NAME] Global site:</p>
 
               <pre><code class="html"><!-- Example 1 - standard control -->
 <input type="checkbox" id="c1" /><label for="c1">Remember me</label>
@@ -885,15 +891,15 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
-              <p>For the home page of the ING Global site:</p>
+              <p>For the home page of the [COMPANY NAME] Global site:</p>
 
                   <pre><code class="html"><!-- Example 1 - non-standard control -->
 <div><img src="chkbx" alt="checkbox" />Remember me</div>
@@ -1007,15 +1013,16 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
                 <li><a href="#testing-visual-formatting">Testing</a></li>
               </ul>
               
-              <h3 class="card-title">Training</h3>
+              <h4 class="heading-s">Training</h4>
               <ul class="list-icons list-linklist">
                 <li><a href="../../training/design/visual-design-and-colors.html#color">Color</a></li>
-                <li><a href="../../training/web/semantic-structure-and-navigation.html#landmarks">Landmarks</a></li>
-                <li><a href="../../training/web/semantic-structure-and-navigation.html#headings">Headings</a></li>
-                <li><a href="../../training/web/semantic-structure-and-navigation.html#links">Links</a></li>
-                <li><a href="../../training/web/semantic-structure-and-navigation.html#tables">Tables</a></li>
-                <li><a href="../../training/web/semantic-structure-and-navigation.html#lists">Lists</a></li>
-                <li><a href="../../training/web/semantic-structure-and-navigation.html#other-semantic-elements">Other Semantic Elements</a></li>
+                <li><a href="../../training/code/semantic-structure-and-navigation.html#landmarks">Landmarks</a></li>
+                <li><a href="../../training/code/semantic-structure-and-navigation.html#headings">Headings</a></li>
+                <li><a href="../../training/code/semantic-structure-and-navigation.html#links">Links</a></li>
+                <li><a href="../../training/code/semantic-structure-and-navigation.html#tables">Tables - Web</a></li>
+                <li><a href="../../training/content/editorial.html#tables">Tables - Content</a></li>
+                <li><a href="../../training/code/semantic-structure-and-navigation.html#lists">Lists</a></li>
+                <li><a href="../../training/code/semantic-structure-and-navigation.html#other-semantic-elements">Other Semantic Elements</a></li>
               </ul>
 
             </div>
@@ -1036,12 +1043,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">// aLabel is a UILabel that is selected
@@ -1054,12 +1061,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">iOS Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>iOS Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="objectivec">// aLabel is a UILabel that is selected
@@ -1076,12 +1083,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">Android Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
               <p>The text input field is required and uses a large font to indicate it's required. This is also indicated via on-screen text (label) and the contentDescription attribute on the corresponding EditText element.</p>
@@ -1095,12 +1102,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">Android Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>Android Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
               <p>The text input field is required and uses a large font to indicate it's required.</p>
@@ -1117,12 +1124,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Example
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Example
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="html"><h2>Fruit</h2>
@@ -1138,12 +1145,12 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
           <div class="collapsible">
             <h5 class="collapsible-control">
-              <button aria-expanded="false">HTML Failure
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+              <button aria-expanded="false">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                   <rect class="vert" height="8" width="2" y="1" x="4"/>
                   <rect height="2" width="8" y="4" x="1"/>
-                </svg>
-              </button>
+                </svg>HTML Failure
+                </button>
             </h5>
             <div class="collapsible-target" hidden>
                 <pre><code class="html"><div class="heading">Fruit</div>
@@ -1247,16 +1254,16 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
                 </li>
               </ul>
             </div>
@@ -1267,7 +1274,7 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
 
         <div class="col-md-4">
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>
               <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
@@ -1290,7 +1297,7 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -1299,7 +1306,7 @@ android:contentDescription="Exit this screen and return to the main menu"></butt
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../basics/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

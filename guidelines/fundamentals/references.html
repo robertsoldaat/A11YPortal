@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -40,11 +40,12 @@
     <div class="pipe-links bg-grey">
       <div class="container pt-2 pb-1">
         <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+          <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item">Guidelines</li>
           <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
           <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -54,7 +55,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
         <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
       </a>
 
@@ -72,10 +73,8 @@
                 <ul class="pagination pagination-navbar">
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/home.html">Home</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/principles.html">Principles</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/responsibilities.html">Responsibilities</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/how-to-test.html">How to Test</a></li>
+                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/testing.html">Testing</a></li>
                   <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/summary.html">Summary</a></li>
-                  <li class="page-item"><a class="page-link" href="../../guidelines/fundamentals/glossary.html">Glossary</a></li>
                   <li class="page-item"><a class="page-link active" href="../../guidelines/fundamentals/references.html" aria-current="page">References <span class="sr-only">(current)</span></a></li>
                 </ul>
               </li>
@@ -87,6 +86,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../../guidelines/code/audio-and-video.html">Code</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../guidelines/e-documents/pdf.html">E-Documents</a>
               </li>
             </ul>
           </div>
@@ -118,7 +120,6 @@
         <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
         <ul class="list-icons list-linklist toc-columns" role="directory">
           <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#ing">ING</a></li>
           <li><a href="#general">General</a></li>
           <li><a href="#bbc">BBC</a></li>
           <li><a href="#android">Android</a></li>
@@ -171,55 +172,7 @@
       </div>
     </section>
 
-    <section class="full-cover bg-faded" role="region" id="ing" aria-labelledby="title-ing">
-      <div class="container">
-
-        <h2 class="full-cover-title" id="title-ing">ING</h2>
-
-        <div class="text-right to-top">
-          <a href="#totop" rel="nofollow">To Top</a>
-        </div>
-
-        <div class="row">
-
-          <div class="col-md-7">
-
-            <div class="card">
-              <div class="card-block">
-
-                <ul class="list-icons list-linklist">
-                  <li><a href="../../index.html">ING Accessibility is our Mission</a> - We help make ING accessible to ALL people, with our without disabilities.</li>
-                  <li><a href="../..//training/fundamentals/home.html#champ-training">Champion Training</a> - Building a Champion Network</li>
-                  <li><a href="../../good-bad/home.html">Good / Bad demonstration</a> - Complete annotated accessiblity examples</li>
-                  <li><a href="../../training/quiz/fundamentals.html">Quiz Questions</a> - Want to test your accessibility knowledge?</li>
-                </ul>
-
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-md-5">
-
-            <div class="card mb-4">
-              <div class="card-block">
-
-                <h3 class="card-title">Resources</h3>
-
-                <p>None documented</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section class="full-cover bg-grey" role="region" id="general" aria-labelledby="title-general">
+    <section class="full-cover bg-faded" role="region" id="general" aria-labelledby="title-general">
       <div class="container">
 
         <h2 class="full-cover-title" id="title-general">General</h2>
@@ -273,7 +226,7 @@
       </div>
     </section>
 
-    <section class="full-cover bg-faded" role="region" id="bbc" aria-labelledby="title-bbc">
+    <section class="full-cover bg-grey" role="region" id="bbc" aria-labelledby="title-bbc">
       <div class="container">
 
         <h2 class="full-cover-title" id="title-bbc">BBC</h2>
@@ -320,7 +273,7 @@
       </div>
     </section>
 
-    <section class="full-cover bg-grey" role="region" id="android" aria-labelledby="title-android">
+    <section class="full-cover bg-faded" role="region" id="android" aria-labelledby="title-android">
       <div class="container">
 
         <h2 class="full-cover-title" id="title-android">Android</h2>
@@ -370,7 +323,7 @@
       </div>
     </section>
 
-    <section class="full-cover bg-faded" role="region" id="ios" aria-labelledby="title-ios">
+    <section class="full-cover bg-grey" role="region" id="ios" aria-labelledby="title-ios">
       <div class="container">
 
         <h2 class="full-cover-title" id="title-ios">iOS</h2>
@@ -421,7 +374,7 @@
 
   </main>
 
-  <aside class="full-cover site-aside bg-grey" role="complementary">
+  <aside class="full-cover site-aside bg-faded" role="complementary">
     <div class="container">
       <h2 class="full-cover-title">Are you new to accessibility?</h2>
       <div class="row">
@@ -450,16 +403,16 @@
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
                 </li>
               </ul>
             </div>
@@ -470,7 +423,7 @@
 
         <div class="col-md-4">
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>
               <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
@@ -493,7 +446,7 @@
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -502,7 +455,7 @@
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="../../basics/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright

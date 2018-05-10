@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
   <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
-  <link rel="stylesheet" href="../../styles/style.processed.min.css">
+  <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>
@@ -40,11 +40,12 @@
     <div class="pipe-links bg-grey">
       <div class="container pt-2 pb-1">
         <ul class="list-inline m-0">
-          <li class="list-inline-item"><a href="../../index.html">Basics</a></li>
+          <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item"><a href="../../guidelines/fundamentals/home.html">Guidelines</a></li>
           <li class="list-inline-item">Training</li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
           <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -54,7 +55,7 @@
 
         <div class="sr-only" id="main-nav">Main Menu</div>
 
-        <a href="../../index.html" class="navbar-brand">
+        <a href="../../" class="navbar-brand">
           <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
         </a>
 
@@ -77,14 +78,13 @@
                   <li class="page-item"><a class="page-link" href="../../training/design/visual-design-and-colors.html">Visual Design</a></li>
                   <li class="page-item"><a class="page-link active" href="../../training/design/multimedia-animations-and-motion.html" aria-current="page">Multimedia and Animations <span class="sr-only">(current)</span></a></li>
                   <li class="page-item"><a class="page-link" href="../../training/design/form-labels-instructions-and-validation.html">Forms</a></li>
-                  <li class="page-item"><a class="page-link" href="../../training/design/design-annotations.html">Design Annotations</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../training/web/semantic-structure-and-navigation.html">Web</a>
+                <a class="nav-link" href="../../training/content/editorial.html">Content</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../training/native/ios.html">Native</a>
+                <a class="nav-link" href="../../training/code/semantic-structure-and-navigation.html">Code</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../../training/testing/testing-methods-and-tools.html">Testing</a>
@@ -203,16 +203,32 @@
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Deque University</h4>
-                <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
+                <ul class="list-icons list-linklist">
                   <li><a href="https://dequeuniversity.com/class/multimedia2/intro">Introduction - Deque University</a></li>
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                </ul>
+
+                <h4 class="heading-s">Training</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="../../training/design/images-svg-and-canvas.html#multimedia-plug-ins-and-documents">Multimedia, Plug-ins, and Documents</a></li>
+                  <li><a href="../../training/content/editorial.html#multimedia">Multimedia</a></li>
                 </ul>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.w3.org/TR/UAAG20/">User Agent Accessibility Guidelines (UAAG) 2.0</a></li>
+                  <li><a href="https://www.w3.org/TR/media-accessibility-reqs/">Media Accessibility User Requirements</a></li>
+                </ul>
+
+                <h4 class="heading-s">Examples</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://w3c.github.io/wai-tutorials/accessible-media/">Accessible Media Tutorial - WAI W3C (Editor’s draft)</a></li>
+                </ul>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="http://www.iheni.com/accessible-media-player-resources/">Accessible media player resources and demos</a></li>
+                </ul>
 
               </div>
             </div>
@@ -233,19 +249,6 @@
           <a href="#totop">To Top</a>
         </div>
 
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
-        </div>
-
         <div class="row">
 
           <div class="col-md-6">
@@ -260,7 +263,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -273,8 +276,7 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -289,37 +291,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -337,19 +335,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -430,7 +415,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -443,9 +428,10 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>Complete dialog, whom is speaking and non speech info</li>
+                </ul>
 
               </div>
             </div>
@@ -457,41 +443,50 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/code/audio-and-video.html">Alternatives for audio and visual content</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://w3c.github.io/wai-tutorials/accessible-media/decision-tree/">Captions and descriptions decision trees - WAI W3C (Editor’s draft)</a></li>
+                </ul>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
-              </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
               </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -509,19 +504,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -565,7 +547,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -578,9 +560,11 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>Via a link or inpage</li>
+                  <li>Must be equivalent information</li>
+                </ul>
 
               </div>
             </div>
@@ -592,41 +576,48 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/code/audio-and-video.html">Alternatives for audio and visual content</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -644,19 +635,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -678,13 +656,12 @@ None documented
 
                 <h4 class="heading-s">Extended Audio Descriptions</h4>
                 <ul class="list-icons list-checklist">
-                  <li>Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description <span class="badge badge-info">SHOULD</span> be provided for all prerecorded multimedia (video
-                    plus audio) content.</li>
+                  <li>Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description <span class="badge badge-info">SHOULD</span> be provided for all prerecorded multimedia (video plus audio) content.</li>
                 </ul>
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -697,9 +674,10 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>Narrator + complete dialog, whom is speaking and non speech info</li>
+                </ul>
 
               </div>
             </div>
@@ -711,41 +689,48 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/code/audio-and-video.html">Alternatives for audio and visual content</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -763,19 +748,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -798,7 +770,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -811,8 +783,7 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -825,41 +796,48 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/code/audio-and-video.html">Alternatives for audio and visual content</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -877,19 +855,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -925,7 +890,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -938,9 +903,16 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>Ensure access to, through and past all embedded content</li>
+                  <li>WCAG 2.1.2 No keyboard trap</li>
+                  <li>Include labels, instructions recommended</li>
+                  <li>All controls keyboard accessible</li>
+                  <li>Name, state, Role, value</li>
+                  <li>Cross browser / platform testing</li>
+                  <li>Ensure captions</li>
+                </ul>
 
               </div>
             </div>
@@ -952,41 +924,48 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/code/audio-and-video.html#volume-control">Volume control</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1004,19 +983,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1043,7 +1009,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -1056,8 +1022,7 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1070,41 +1035,48 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/code/audio-and-video.html#volume-control">Volume control</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1124,19 +1096,6 @@ None documented
           <a href="#totop">To Top</a>
         </div>
 
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
-        </div>
-
         <div class="row">
 
           <div class="col-md-6">
@@ -1153,7 +1112,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -1166,8 +1125,7 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1180,41 +1138,48 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/design/visual-design.html#flicker">Flicker</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1232,19 +1197,6 @@ None documented
 
         <div class="text-right to-top">
           <a href="#totop">To Top</a>
-        </div>
-
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
         </div>
 
         <div class="row">
@@ -1275,7 +1227,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -1288,8 +1240,7 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1302,41 +1253,48 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
                   <li><a href="../../guidelines/code/scripts-and-dynamic-content.html#controlling-media">Controlling media</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1356,19 +1314,6 @@ None documented
           <a href="#totop">To Top</a>
         </div>
 
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
-        </div>
-
         <div class="row">
 
           <div class="col-md-6">
@@ -1385,7 +1330,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -1398,9 +1343,10 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
-                <p>None documented</p>
+                <h3 class="card-title">Tips & Tricks</h3>
+                <ul class="list-icons list-checklist">
+                  <li>Ends within three seconds</li>
+                </ul>
 
               </div>
             </div>
@@ -1412,7 +1358,7 @@ None documented
             <div class="card mb-4">
               <div class="card-block">
 
-                <h3 class="card-title">Resources</h3>
+                <h3 class="card-title">Jump to:</h3>
 
                 <h4 class="heading-s">Guidelines</h4>
                 <ul class="list-icons list-linklist">
@@ -1421,34 +1367,41 @@ None documented
                   <li><a href="../../guidelines/code/scripts-and-dynamic-content.html#controlling-media">Controlling media</a></li>
                 </ul>
 
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
                 <h4 class="heading-s">Specifications</h4>
+                <p>None documented</p>
+
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1468,19 +1421,6 @@ None documented
           <a href="#totop">To Top</a>
         </div>
 
-        <div class="card mb-4">
-          <div class="card-block">
-
-            <h3 class="card-title">HTML Example</h3>
-
-            <pre class="highlight">
-<code class="html">
-None documented
-</code>
-</pre>
-          </div>
-        </div>
-
         <div class="row">
 
           <div class="col-md-6">
@@ -1495,7 +1435,7 @@ None documented
 
                 <h4 class="heading-s">Download Summary & Checklist</h4>
                 <ul class="list-icons list-linklist">
-                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/Audio%2C%20Video%2C%20Animations%2C%20and%20Motion%20-%20Design%20-%20Summary%20and%20Checklist.pdf">Multimedia, Animations, and Motion PDF</a></li>
                 </ul>
 
               </div>
@@ -1508,8 +1448,7 @@ None documented
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Extra</h3>
-                <h4 class="heading-s">Tips & Tricks</h4>
+                <h3 class="card-title">Tips & Tricks</h3>
                 <p>None documented</p>
 
               </div>
@@ -1524,37 +1463,33 @@ None documented
 
                 <h3 class="card-title">Resources</h3>
 
-                <h4 class="heading-s">Guidelines</h4>
+                <h4 class="heading-s">Specifications</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">Specifications</h4>
+                <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
                 <p>None documented</p>
 
               </div>
-              <div>
-                <a href="../../guidelines/fundamentals/home.html" class="link-plug-on">
-                  <span class="icon icon-document icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Accessibility Guidelines</a>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-block">
 
-                <h3 class="card-title">Training</h3>
+                <h3 class="card-title">Practice</h3>
 
-                <h4 class="heading-s">Dev</h4>
+                <h4 class="heading-s">WCAG Annotations</h4>
                 <p>None documented</p>
 
-                <h4 class="heading-s">UX</h4>
+                <h4 class="heading-s">Design Annotations</h4>
                 <p>None documented</p>
 
               </div>
               <div>
                 <a href="https://github.com/team-a11y/A11YPortal" class="link-plug-on">
-                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Practice Github</a>
+                  <span class="icon icon-college icon-xl icon-gray-dark mr-2" aria-hidden="true"></span> Good / Bad - Github</a>
               </div>
             </div>
 
@@ -1596,16 +1531,16 @@ None documented
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
                 </li>
               </ul>
             </div>
@@ -1616,7 +1551,7 @@ None documented
 
         <div class="col-md-4">
           <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>
               <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
@@ -1639,7 +1574,7 @@ None documented
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
           <li class="list-inline-item">
-            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+            <span id="placeholderurl">Company link</span>
           </li>
           <li class="list-inline-item">
             <a href="https://github.com/team-a11y/A11YPortal">Github</a>
@@ -1648,7 +1583,7 @@ None documented
             <a href="https://dequeuniversity.com/">Deque University</a>
           </li>
           <li class="list-inline-item">
-            <a href="https://18c124d768e2453383ddbe1aa49b65c3.codepen.website../../training/general/contact.html">Contact</a>
+            <a href="../../general/contact.html">Contact</a>
           </li>
           <li class="list-inline-item">
             &copy; 2018 Copyright
