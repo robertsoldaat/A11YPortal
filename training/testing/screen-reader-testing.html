@@ -45,7 +45,7 @@
           <li class="list-inline-item">Training</li>
           <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
           <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
-          <li class="list-inline-item"><a href="../../general/contact.html">Contact</a></li>
+         <li class="list-inline-item"><a href="../../about/fundamentals/contact.html">About</a></li>
         </ul>
       </div>
     </div>
@@ -85,7 +85,6 @@
                 <ul class="pagination pagination-navbar">
                   <li class="page-item"><a class="page-link" href="../../training/testing/testing-methods-and-tools.html">Testing Methods and Tools</a></li>
                   <li class="page-item"><a class="page-link active" href="../../training/testing/screen-reader-testing.html" aria-current="page">Screen Reader Testing <span class="sr-only">(current)</span></a></li>
-                  <li class="page-item"><a class="page-link" href="../../training/testing/checklists-testing.html">Checklists Testing</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -154,7 +153,7 @@
 
           <div class="col-md-7">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h2 class="card-title" id="title-introduction">Introduction</h2>
@@ -186,7 +185,7 @@
 
           <div class="col-md-5">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Jump to:</h3>
@@ -199,7 +198,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -242,7 +241,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -258,7 +257,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -294,7 +293,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -311,7 +310,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -349,7 +348,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -365,7 +364,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -378,6 +377,82 @@
                   <li>Objection is that people don't want the web site to know they use them</li>
                 </ul>
 
+                <h4 class="heading-s">No Visual Interface</h4>
+                <ul class="list-icons list-checklist">
+                  <li>No graphical user interface</li>
+                  <li>For blind, low vision and cognitive disabilities</li>
+                  <li>Memorize quite a few keyboard shortcuts</li>
+                  <li><a href="https://dequeuniversity.com/class/screenreaders1/characteristics/">Keyboard shortcuts</a></li>
+                </ul>
+
+                <h4 class="heading-s">Screen (may also!) Readers Read the DOM</h4>
+                <ul class="list-icons list-checklist">
+                  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#contractmodel">Figure 1: The contract model with accessibility APIs</a></li>
+                  <li>User agent conveys relevant information to OS accessibility API</li>
+                  <li>Accessibility information found in the accessibility API</li>
+                  <li>Name, role, state, selection, event notification, relationship information, and descriptions</li>
+                  <li>Some screen readers may also look at the DOM</li>
+                </ul>
+
+                <h4 class="heading-s">(Often) No Mouse, Just Keyboard</h4>
+                <ul class="list-icons list-checklist">
+                  <li>All elements and controls must be available to keyboard</li>
+                  <li>Mouse may also be used for speech output</li>
+                  <li>You must learn keyboard shortcuts for browsers</li>
+                  <li>You must learn shortcuts specific for different screen readers</li>
+                </ul>
+
+                <h4 class="heading-s">No Visual Styles</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Screen readers ignore pretty much everything about visual styles via CSS.</li>
+                  <li>Effect in place for: <code>display: block/none;</code> <code>visibility: visible/hidden;</code> pseudo classes <code>:before</code><code>:after</code> + <code>content:</code> property</li>
+                </ul>
+
+                <h4 class="heading-s">Linear Content</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Screen reader users cannot glance at a web page, and cannot intuitively understand the page's layout quickly.</li>
+                  <li>Read through the entire page, it will start at the first element in the DOM and proceed until the last element in the DOM</li>
+                  <li>This is often NOT the way they create a mental map of the web site</li>
+                  <li>Screen Readers Require a Logical Linear Reading Order in the DOM</li>
+                </ul>
+
+                <h4 class="heading-s">Non-Linear Navigation</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Linear experience by reading complete page will take a long time</li>
+                  <li>For yourself you also don't read complete pages</li>
+                  <li>Blind users want to skip parts of web pages too</li>
+                  <li>Navigate through the structural and semantic elements is common</li>
+                  <li>Landmark regions, headings, links, tables, form elements, frames, lists, and other items</li>
+                </ul>
+
+                <h4 class="heading-s">Reading Page Content</h4>
+                <ul class="list-icons list-checklist">
+                  <li>When a page is loaded screen readers announce the page <code>&lt;title&gt;</code>element</li>
+                  <li>Acronyms and Abbreviations may be pronounced</li>
+                  <li>Reading letter by letter is possible with distinguishes between upper and lower case</li>
+                  <li>Proper announcing for Typographic Symbols can't be relied on</li>
+                  <li>Images always need proper <code>alt</code> attribute</li>
+                  <li>If link destination is on same page, "same page link" often announced</li>
+                  <li>Heading levels are announced and most important for navigating</li>
+                  <li>Table headers, captions and relations need to be in place for proper understanding</li>
+                  <li>Words that are spelled the same yet have different meanings are difficult for SR</li>
+                  <li>Option to navigate forms in or out of form navigation mode</li>
+                  <li>Screen readers can switch languages while reading</li>
+                  <li>Ability to read all, none or just a bit of punctuation</li>
+                </ul>
+
+                <h4 class="heading-s">Virtual Buffer VS Browsers VS A11Y APIs</h4>
+                <ul class="list-icons list-checklist">
+                  <li>Virtual buffer will disappear</li>
+                  <li>Browsers must take over this role</li>
+                  <li>APIs will be more and more important</li>
+                  <li>Tabbing through all tab-navigable elements on the page, or</li>
+                  <li>Jumping from heading to heading, or</li>
+                  <li>Jumping from paragraph to paragraph to hear the first sentence or two,</li>
+                  <li>By skipping repetitive navigation elements, and</li>
+                  <li>By accessing a list of all of the forms, buttons, links, lists, tables and other content on a page</li>
+                </ul>
+
               </div>
             </div>
 
@@ -385,7 +460,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -402,7 +477,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -440,7 +515,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -456,7 +531,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -469,7 +544,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -486,7 +561,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -524,7 +599,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -540,7 +615,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -553,7 +628,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -570,7 +645,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -608,7 +683,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -624,11 +699,52 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
-                <p>None documented</p>
+
+                <h4 class="heading-s">Document Mode</h4>
+                <ul class="list-icons list-checklist">
+                  <li>The default mode of screen readers</li>
+                  <li>Document navigation keyboard shortcuts are available</li>
+                  <li>Read the text, including reading each character individually, if necessarys</li>
+                  <li><code>T</code> key to navigate from one table to the next, or the <code>G</code> key to navigate from graphic to the next, and so on</li>
+                  <li>Generally read from the virtual buffer, a copy of the original text</li>
+                </ul>
+
+                <h4 class="heading-s">Document Mode</h4>
+                <ul class="list-icons list-checklist">
+                  <li>
+                    <a href="http://accessibleculture.org/articles/2012/09/aria-widgets-and-focus-forms-mode-support/">ARIA Widgets and Focus/Forms Mode Support in JAWS and NVDA</a>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>All keyboard shortcuts associated with letters and numbers disabled</li>
+                      <li>To allow you to type the letters and numbers</li>
+                      <li>Generally automatically switch to forms mode when focussed</li>
+                      <li>So it won't land on paragraphs, spans, headings, divs, or anything else that is not focusable</li>
+                      <li>Native form elements and <code>aria-label</code>, <code>aria-labelledby</code> and <code>aria-describedby</code> as well as <code>tabindex="0"</code> on elements will be read</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h4 class="heading-s">Application Mode</h4>
+                <ul class="list-icons list-checklist">
+                <li>
+                  <a href="https://www.marcozehe.de/2012/02/06/if-you-use-the-wai-aria-role-application-please-do-so-wisely/">If you use the WAI-ARIA role “application”, please do so wisely!</a>
+                </li>
+                <li>
+                  <ul>
+                      <li>Allow to implement all keyboard functionality needed to make an application work</li>
+                      <li>Disables nearly all regular keyboard shortcuts and gives a blank slate</li>
+                      <li>Regular text is not readable</li>
+                      <li>Similar to forms mode, only the focusable elements will be read</li>
+                      <li>Wrap only a small portion of the page in an application region</li>
+                      <li>A technique for text to be read is to add <code>role="document"</code> inside the application region</li>
+                    </ul>
+                  </li>
+                </ul>
 
               </div>
             </div>
@@ -637,7 +753,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -649,12 +765,17 @@
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.marcozehe.de/2017/09/29/rethinking-web-accessibility-on-windows/">Rethinking Web Accessibility On Windows</a></li>
+                  <li><a href="https://www.marcozehe.de/2012/02/06/if-you-use-the-wai-aria-role-application-please-do-so-wisely/">If you use the WAI-ARIA role “application”, please do so wisely! - Marco Zehe</a></li>
+                  <li><a href="https://tink.uk/understanding-screen-reader-interaction-modes/">Understanding screen reader interaction modes - Léonie Watson</a></li>
+                  <li><a href="https://webaim.org/blog/three-things-voiceover/">Three things you should know before using VoiceOver for testing - WebAIM</a></li>
+                </ul>
 
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -692,7 +813,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -708,7 +829,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -726,7 +847,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -748,7 +869,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -786,7 +907,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -802,7 +923,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -819,7 +940,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -840,7 +961,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -878,7 +999,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -894,11 +1015,16 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
-                <p>None documented</p>
+                <ul class="list-icons list-checklist">
+                  <li>Pre-installed on all iOS devices (phones and tablets</li>
+                  <li>Small differences from OSX version</li>
+                  <li>iOS slightly better support</li>
+                  <li>Third-party apps need to follow guidelines</li>
+                </ul>
 
               </div>
             </div>
@@ -907,24 +1033,28 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.apple.com/accessibility/iphone/vision/">VoiceOver iOS</a></li>
+                </ul>
 
                 <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/TPG-Mobile-Testing-Guide.pdf">TPG Mobile Testing Guide Android & iOS - PDF 2.6MB</a></li>
+                </ul>
 
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -962,7 +1092,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -978,11 +1108,15 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
-                <p>None documented</p>
+                <ul class="list-icons list-checklist">
+                  <li>Pre-installed or downloadable from Google Play</li>
+                  <li>Works best on Google products</li>
+                  <li>Third-party apps need to follow guidelines</li>
+                </ul>
 
               </div>
             </div>
@@ -991,24 +1125,29 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://developer.android.com/training/accessibility/testing.html#talkback">TalkBack on Android Devices</a></li>
+                  <li><a href="https://support.google.com/accessibility/android/?hl=en#topic=3529932">TalkBack user documentation</a></li>
+                </ul>
 
                 <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
 
                 <h4 class="heading-s">Miscellaneous</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://github.com/team-a11y/A11YPortal/blob/master/docs/summary-checklists/TPG-Mobile-Testing-Guide.pdf">TPG Mobile Testing Guide Android & iOS - PDF 2.6MB</a></li>
+                </ul>
 
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -1046,7 +1185,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -1062,11 +1201,16 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
-                <p>None documented</p>
+                <ul class="list-icons list-checklist">
+                  <li>Built-in screen reader called VoiceOver</li>
+                  <li>Limited support for software like Word, PDF etc.</li>
+                  <li>On-Screen Subtitles and Menus</li>
+                  <li>Works best with Safari</li>
+                </ul>
 
               </div>
             </div>
@@ -1075,13 +1219,18 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
 
                 <h4 class="heading-s">Specifications</h4>
-                <p>None documented</p>
+                <ul class="list-icons list-linklist">
+                  <li><a href="https://www.apple.com/accessibility/mac/vision/">VoiceOver official page on Apple.com</a></li>
+                  <li><a href="https://help.apple.com/voiceover/info/guide/10.12/">Apple Accessibility: VoiceOver Getting Started Guide
+  </a></li>
+                  <li><a href="https://dequeuniversity.com/class/screenreaders1/voiceover-keyboard-shortcuts">VoiceOver Keyboard Shortcuts</a></li>
+                </ul>
 
                 <h4 class="heading-s">Examples</h4>
                 <p>None documented</p>
@@ -1092,7 +1241,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -1130,7 +1279,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -1146,7 +1295,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -1162,7 +1311,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -1181,7 +1330,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -1219,7 +1368,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -1235,7 +1384,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -1248,7 +1397,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -1265,7 +1414,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -1303,7 +1452,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -1319,7 +1468,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -1332,7 +1481,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -1349,7 +1498,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -1387,7 +1536,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Checklist Deque</h3>
@@ -1403,7 +1552,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Tips & Tricks</h3>
@@ -1416,7 +1565,7 @@
 
           <div class="col-md-6">
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Resources</h3>
@@ -1433,7 +1582,7 @@
               </div>
             </div>
 
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-block">
 
                 <h3 class="card-title">Practice</h3>
@@ -1466,7 +1615,7 @@
       <div class="row">
 
         <div class="col-md-4">
-          <div class="card mb-4">
+          <div class="card">
             <img class="card-img-top img-fluid" src="../../images/tile-ForwardPlanning.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Training!</h3>
@@ -1481,7 +1630,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-4">
+          <div class="card">
             <img class="card-img-top img-fluid border-grey-light" src="../../images/getting-started2.png" alt="Cutout of infographic for the 9 step Getting Started with accessibility part. Step 1, roles and responsibilities, and partly step 2, personas, is shown.">
             <div class="card-block">
               <h3 class="card-title">
@@ -1489,16 +1638,19 @@
               </h3>
               <ul class="list-icons list-linklist">
                 <li>
-                  <a href="../../basics/essentials/responsibilities.html#user-experience">User Experience</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#user-experience">User Experience</a>
                 </li>
                 <li>
-                  <a href="../../basics/essentials/responsibilities.html#developers">Developers</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#developers">Developers</a>
                 </li>
                 <li>
-                  <a href="../../basics/essentials/responsibilities.html#editors">Editors</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#editors">Editors</a>
                 </li>
                 <li>
-                  <a href="../../basics/essentials/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                  <a href="../../basics/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                </li>
+                <li>
+                  <a href="../../basics/fundamentals/responsibilities.html#accessibility-champion">Accessibility Champion</a>
                 </li>
               </ul>
             </div>
@@ -1508,7 +1660,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card mb-4">
+          <div class="card">
             <img class="card-img-top img-fluid" src="../../images/quiz-small.jpg" alt="">
             <div class="card-block">
               <h3 class="card-title">Take a look at the quiz questions!</h3>

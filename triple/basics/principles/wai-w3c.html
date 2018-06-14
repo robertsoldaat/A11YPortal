@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117757403-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117757403-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAI W3C - Principles - Accessibility Portal</title>
+
+  <link rel="stylesheet" href="../../styles/libs/bootstrap/bootstrap.processed.css">
+  <link rel="stylesheet" href="https://13989e8ebed7465397ea3df597560e5c.codepen.website/styles/style.processed.min.css">
+  <link rel="stylesheet" href="https://www.ing.nl/assets/web/ng/css/ec6d47ec.the-guide-styles-responsive.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+</head>
+
+<body class="quiz" id="totop">
+
+  <header class="site-header" role="banner">
+
+    <div class="skip-links">
+      <a href="#main-menu">Skip to Main Menu</a>
+      <a href="#main-content">Skip to Main Content</a>
+    </div>
+
+    <div class="pipe-links bg-grey">
+      <div class="container pt-2 pb-1">
+        <ul class="list-inline m-0">
+          <li class="list-inline-item">Basics</li>
+          <li class="list-inline-item"><a href="../../guidelines/fundamentals/home.html">Guidelines</a></li>
+          <li class="list-inline-item"><a href="../../training/fundamentals/home.html">Training</a></li>
+          <li class="list-inline-item"><a href="../../good-bad/home.html">Good / Bad</a></li>
+          <li class="list-inline-item"><a href="../../sitemap/sitemap-basics.html">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="navbar navbar-toggleable-md navbar-light">
+      <nav class="container" role="navigation" aria-labelledby="main-nav">
+
+        <div class="sr-only" id="main-nav">Main Menu</div>
+
+        <a href="../../index.html" class="navbar-brand">
+          <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <div class="mr-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Fundamentals</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/basics/principles/wai-w3c.html" aria-current="true" id="main-menu">Principles <span class="sr-only">(current)</span></a>
+                <ul class="pagination pagination-navbar">
+                  <li class="page-item"><a class="page-link active" href="/basics/principles/wai-w3c.html">WAI W3C <span class="sr-only">(current)</span></a></li>
+                  <li class="page-item"><a class="page-link" href="/basics/principles/wcag.html">WCAG</a></li>
+                  <li class="page-item"><a class="page-link" href="/basics/principles/wai-aria.html">WAI-ARIA</a></li>
+                  <li class="page-item"><a class="page-link" href="/basics/principles/material-design.html">Material Design</a></li>
+                  <li class="page-item"><a class="page-link" href="/basics/principles/human-interface-guidelines.html">Human Interface Guidelines</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/basics/videos/a11ycasts.html">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/basics/presentations/intro-to-a11y.html">Presentations</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </nav>
+    </div>
+
+  </header>
+
+  <main role="main" id="main-content">
+
+    <div class="brandbar brandbar-a">
+      <div class="brandbar-image brandbar-image-portal"></div>
+      <div class="container">
+        <div class="brandbar-header">
+          <div class="brandbar-heading">
+            <h1 class="brandbar-title">Web Accessibility Initiative - W3C</h1>
+            <p class="brandbar-lead">Principles - <abbr title="Accessibility">A11Y</abbr> Basics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="full-cover bg-faded" role="navigation" aria-labelledby="title-toc">
+      <div class="container">
+
+        <h2 class="full-cover-title sr-only" id="title-toc">Table of Contents</h2>
+        <ul class="list-icons list-linklist toc-columns" role="directory">
+          <li><a href="#introduction">Introduction</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <section class="full-cover bg-grey" role="region" id="introduction" aria-labelledby="title-introduction">
+      <div class="container">
+
+        <div class="text-right to-top to-top-z">
+          <a href="#totop">To Top</a>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-7">
+
+            <div class="card">
+              <div class="card-block">
+
+                <h2 class="card-title" id="title-introduction">Introduction</h2>
+                <p class="lead"><strong>WAI: Strategies, guidelines, resources to make the Web accessible to people with disabilities</strong></p>
+                <p>Inclusive design, design for all, digital inclusion, universal usability, and similar efforts address a broad range of issues in making technology available to and usable by all people whatever their abilities, age, economic situation, education, geographic location, language, etc.</p>
+                <p>Accessibility focuses on people with disabilities — people with auditory, cognitive, neurological, physical, speech, and visual impairments. The documents below explore some of the overlaps between inclusive design and web accessibility, and help managers, designers, developers, policy makers, researchers, and others optimize their efforts in these overlapping areas.</p>
+                
+                <h3 class="heading-s">WAI develops...</h3>
+                <ul>
+                  <li>guidelines widely regarded as the international standard for Web accessibility</li>
+                  <li>support materials to help understand and implement Web accessibility</li>
+                  <li>resources, through international collaboration</li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-5">
+
+            <div class="card">
+              <div class="card-block">
+
+                <h3 class="card-title">Resources</h3>
+
+                <h4 class="heading-s">Specifications</h4>
+                <ul class="list-icons list-linklist toc-columns" role="directory" aria-labelledby="title-toc">
+                  <li><a href="https://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a></li>
+                </ul>
+
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="full-cover site-aside bg-faded" role="complementary">
+    <div class="container">
+      <h2 class="full-cover-title">Are you new to accessibility?</h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="../../images/tile-ForwardPlanning.jpg" alt="">
+            <div class="card-block">
+              <h3 class="card-title">Training!</h3>
+              <p class="lead"><strong>We would also like YOU to become a champ</strong></p>
+            </div>
+            <div>
+              <a href="../../training/fundamentals/home.html#champ-training" class="link-plug-on">
+              <span class="icon icon-like icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Become a champ
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid border-grey-light" src="../../images/getting-started2.png" alt="Cutout of infographic for the 9 step Getting Started with accessibility part. Step 1, roles and responsibilities, and partly step 2, personas, is shown.">
+            <div class="card-block">
+              <h3 class="card-title">
+                Responsibilities for:
+              </h3>
+              <ul class="list-icons list-linklist">
+                <li>
+                  <a href="../../guidelines/fundamentals/responsibilities.html#user-experience">User Experience</a>
+                </li>
+                <li>
+                  <a href="../../guidelines/fundamentals/responsibilities.html#developers">Developers</a>
+                </li>
+                <li>
+                  <a href="../../guidelines/fundamentals/responsibilities.html#editors">Editors</a>
+                </li>
+                <li>
+                  <a href="../../guidelines/fundamentals/responsibilities.html#customer-journey-expert">Customer Journey Expert</a>
+                </li>
+              </ul>
+            </div>
+            <a href="../../guidelines/fundamentals/responsibilities.html" class="link-plug-on">
+            <span class="icon icon-right-left icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> More on Responsibilities</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="../../images/quiz-small.png" alt="">
+            <div class="card-block">
+              <h3 class="card-title">Take a look at the quiz questions!</h3>
+              <p class="card-text">For a quick insight in accessibility and what the training is based upon the quiz questions are a good place to start.
+              </p>
+            </div>
+            <div>
+              <a href="../../training/quiz/fundamentals.html" class="link-plug-on">
+              <span class="icon icon-questionmark icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> See all the questions
+            </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </aside>
+
+  <footer class="full-cover site-footer bg-grey" role="contentinfo">
+    <div class="container">
+      <div class="d-inline-block">
+        <ul class="pipe-links list-inline mt-2" aria-label="footer links">
+          <li class="list-inline-item">
+            <a href="http://a11y.ing.net">Orange Juice - ING</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/team-a11y/A11YPortal">Github</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://dequeuniversity.com/">Deque University</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/basics/general/contact.html">Contact</a>
+          </li>
+          <li class="list-inline-item">
+            &copy; 2018 Copyright
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="../../scripts/libs/bootstrap/bootstrap.js"></script>
+  <script src="../../scripts/script.js"></script>
+
+</body>
+
+</html>

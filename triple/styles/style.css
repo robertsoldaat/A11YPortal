@@ -72,6 +72,7 @@ code {
 }
 
 .navbar-light .navbar-nav .nav-link { padding: 6px .5em; }
+.navbar-light .navbar-nav .nav-link:hover { padding: 6px .5em; }
 .pagination-navbar .page-link { padding: 12px .75rem 8px .75rem; }
 .navbar-light .navbar-nav .nav-item.active { padding-bottom: 34px; }
 
@@ -175,10 +176,6 @@ a:focus {
 .navbar-light .navbar-toggler:hover {
   color: #ffffff;
   background-color: #993300;
-}
-
-.full-cover-title {
-  color: #696969;
 }
  
 .brandbar-heading {
