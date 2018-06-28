@@ -22,8 +22,8 @@
   <link rel="stylesheet" href="/styles/styles-responsive.css">
 
   <style type="text/css">
-    a.example[href][target="_blank"]:focus:after,
-    a.example[href][target="_blank"]:hover:after {
+    a.example[href][target="_blank" rel="noopener noreferrer"]:focus:after,
+    a.example[href][target="_blank" rel="noopener noreferrer"]:hover:after {
       height: auto;
       width: auto;
       position: absolute;
@@ -56,7 +56,7 @@
     </div>
 
     <div class="pipe-links bg-grey">
-      <div class="container pt-2 pb-1">
+      <div class="container">
         <ul class="list-inline m-0">
           <li class="list-inline-item"><a href="../../">Basics</a></li>
           <li class="list-inline-item"><a href="../../guidelines/fundamentals/home.html">Guidelines</a></li>
@@ -74,7 +74,7 @@
         <div class="sr-only" id="main-nav">Main Menu</div>
 
         <a href="../../" class="navbar-brand">
-          <img class="avatar-img" src="../../images/a11y-logo.png" alt="Accessibility Portal">
+          <img class="avatar-img" src="../../images/a11y-logo-2.png" alt="Accessibility Portal">
         </a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
@@ -810,7 +810,7 @@ role="button">
 
               <div class="bd-example">
 
-                <a href="http://google.com" class="example" target="_blank">Search</a>
+                <a href="http://google.com" class="example" target="_blank" rel="noopener noreferrer">Search</a>
 
               </div>
 
@@ -820,7 +820,7 @@ role="button">
 &lt;html lang="en"&gt;
   &lt;head&gt;
     <style type="text/css">
-      a[href][target="_blank"]:focus:after, a[href][target="_blank"]:hover:after {
+      a[href][target="_blank" rel="noopener noreferrer"]:focus:after, a[href][target="_blank" rel="noopener noreferrer"]:hover:after {
         height: auto; width: auto;
         position: absolute;
         z-index: 1;
@@ -837,7 +837,7 @@ role="button">
   &lt;/head&gt;
   &lt;body&gt;
     <div>
-      <a href="http://google.com" target="_blank">Search</a>
+      <a href="http://google.com" target="_blank" rel="noopener noreferrer">Search</a>
     </div>
   &lt;/body&gt;
 &lt;/html&gt;
@@ -1612,7 +1612,7 @@ role="button">
               <p class="lead"><strong>We would also like YOU to become a champ</strong></p>
             </div>
             <div>
-              <a href="/index.html#champ-training" class="link-plug-on">
+              <a href="../../training/fundamentals/home.html#champ-training" class="link-plug-on">
               <span class="icon icon-like icon-lg icon-gray-dark mr-2" aria-hidden="true"></span> Become a champ
             </a>
             </div>
@@ -1669,7 +1669,7 @@ role="button">
     </div>
   </aside>
   
-  <footer class="full-cover site-footer bg-grey" role="contentinfo">
+  <footer class="full-cover site-footer" role="contentinfo">
     <div class="container">
       <div class="d-inline-block">
         <ul class="pipe-links list-inline mt-2" aria-label="footer links">
